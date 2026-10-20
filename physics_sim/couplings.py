@@ -28,6 +28,7 @@ class ToolLatch:
         self.tools = {n: descendants(model, n) for n in ('socket_tool', 'tire_tool')}
         self.attached = None
         self.overload_time = 0.
+        self.peak_force = self.peak_torque = 0.
         self.events = []
         self.blocked = set()
 
@@ -59,20 +60,26 @@ class ToolLatch:
             self.blocked.clear()
             if jaw < -.12:
                 self.release('jaw_opened')
-            return
         if self.attached:
             eid = m.equality(self.attached+'_latch').id
             rows = (d.efc_type == mujoco.mjtConstraint.mjCNSTR_EQUALITY) & (d.efc_id == eid)
-            loads = d.efc_force[rows]
-            force = np.linalg.norm(loads[:3])
-            torque = np.linalg.norm(loads[3:]) * m.eq_data[eid, 10]
+            constraint_load=np.zeros(d.nefc)
+            constraint_load[rows]=d.efc_force[rows]
+            generalized_load=np.zeros(m.nv)
+            mujoco.mj_mulJacTVec(m,d,generalized_load,constraint_load)
+            bid=m.body(self.attached).id
+            dof=m.jnt_dofadr[m.body_jntadr[bid]]
+            force=float(np.linalg.norm(generalized_load[dof:dof+3]))
+            torque=float(np.linalg.norm(generalized_load[dof+3:dof+6]))
+            self.peak_force=max(self.peak_force,force)
+            self.peak_torque=max(self.peak_torque,torque)
             overload = force > p['latch_force_limit_n'] or torque > p['latch_torque_limit_nm']
             self.overload_time = self.overload_time + m.opt.timestep if overload else 0.
             if self.overload_time > .02:
                 self.blocked.add(self.attached)
                 self.release('latch_overload')
             return
-        if abs(jaw) > .045:
+        if not close_requested or abs(jaw) > .045:
             return
         for name in self.tools:
             distance, angle = self.alignment(name)
@@ -84,7 +91,8 @@ class ToolLatch:
             vhand, vtool = np.zeros(6), np.zeros(6)
             mujoco.mj_objectVelocity(m,d,mujoco.mjtObj.mjOBJ_BODY,hand,vhand,0)
             mujoco.mj_objectVelocity(m,d,mujoco.mjtObj.mjOBJ_BODY,tool,vtool,0)
-            if np.linalg.norm(vhand-vtool) > .15:
+            if (np.linalg.norm(vhand[3:]-vtool[3:]) > p['latch_linear_speed_limit_m_s'] or
+                    np.linalg.norm(vhand[:3]-vtool[:3]) > p['latch_angular_speed_limit_rad_s']):
                 continue
             rot = d.xmat[hand].reshape(3,3)
             pos = rot.T @ (d.xpos[tool]-d.xpos[hand])
@@ -113,9 +121,14 @@ class PrintedThread:
         self.origin = np.array([0., -.02165, .054])
         self.axis = np.array([0., -1., 0.])
         self.angle = self.last_angle = 0.
+        self.last_time = float(data.time)
         self.spin_dof = model.joint('nut_free').dofadr[0] + 4
         self.geoms = np.flatnonzero((model.geom_bodyid == self.bid) & (model.geom_contype == 2))
         model.dof_frictionloss[self.spin_dof] = 0.
+        # A soft default friction constraint leaks enough torque to spin this
+        # tiny inertia below breakaway. Use near-rigid, implicit stiction.
+        model.dof_solimp[self.spin_dof] = [.9999,.9999,.001,.5,2.]
+        model.dof_solref[self.spin_dof] = [.002,1.]
         model.geom_conaffinity[self.geoms] = 1 if enabled else 5
         self.engaged = enabled
         self.enabled = enabled
@@ -131,17 +144,23 @@ class PrintedThread:
         mujoco.mj_comPos(m,d)
         mujoco.mj_comVel(m,d)
         rot = d.xmat[self.bid].reshape(3,3)
+        velocity = np.zeros(6)
+        mujoco.mj_objectVelocity(m,d,mujoco.mjtObj.mjOBJ_BODY,self.bid,velocity,0)
+        spin = np.dot(velocity[:3],self.axis)
         x = rot[:,0]
         wrapped = math.atan2(np.dot(self.axis, np.cross([1,0,0],x)), x[0])
-        self.angle += math.atan2(math.sin(wrapped-self.last_angle), math.cos(wrapped-self.last_angle))
+        increment = math.atan2(math.sin(wrapped-self.last_angle), math.cos(wrapped-self.last_angle))
+        # Recover complete turns if a very light nut rotates more than pi in a
+        # step. MuJoCo integrates orientation with the current post-step speed.
+        predicted = spin * (d.time-self.last_time)
+        increment += 2*math.pi*round((predicted-increment)/(2*math.pi))
+        self.angle += increment
         self.last_angle = wrapped
+        self.last_time = float(d.time)
         displacement = d.xpos[self.bid] - self.origin
         axial = np.dot(displacement, self.axis)
         lateral = displacement - axial*self.axis
         tilt = np.cross(rot @ self.axis, self.axis)
-        velocity = np.zeros(6)
-        mujoco.mj_objectVelocity(m,d,mujoco.mjtObj.mjOBJ_BODY,self.bid,velocity,0)
-        spin = np.dot(velocity[:3],self.axis)
         speed = np.dot(velocity[3:],self.axis)
         lead = p['thread_pitch_m'] / (2*math.pi)
         if self.engaged and axial > p['thread_engagement_m']-.0002 and self.angle*lead >= p['thread_engagement_m']:

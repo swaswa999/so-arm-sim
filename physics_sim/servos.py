@@ -28,9 +28,10 @@ class ServoSpec:
                      "command_speed", "command_acceleration", "thermal_time_constant"):
             if not math.isfinite(getattr(self, name)) or getattr(self, name) <= 0:
                 raise ValueError(f"{name} must be finite and positive")
-        if not 0 <= self.latency < 1 or self.kd < 0 or self.ki < 0:
+        if (not math.isfinite(self.latency) or not 0 <= self.latency < 1 or
+                any(not math.isfinite(v) or v < 0 for v in (self.kd,self.ki))):
             raise ValueError("Invalid latency or servo gains")
-        if self.continuous_torque > self.stall_torque or self.encoder_steps < 2:
+        if self.continuous_torque > self.stall_torque or not isinstance(self.encoder_steps,int) or self.encoder_steps < 2:
             raise ValueError("Invalid servo torque ratings or encoder resolution")
 
 

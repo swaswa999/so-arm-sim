@@ -53,5 +53,19 @@
     0.15,
     0,
     0
-  ]
+  ],
+  "latch_linear_speed_limit_m_s": 0.03,
+  "latch_angular_speed_limit_rad_s": 0.3,
+  "servo_controller": {
+    "kp": 55.0,
+    "kd": 1.2,
+    "ki": 8.0,
+    "command_speed": 2.0,
+    "command_acceleration": 5.0,
+    "latency": 0.02,
+    "encoder_steps": 4096,
+    "thermal_time_constant": 20.0
+  },
+  "drive_no_load_speed_rad_s": 6.0,
+  "jaw_no_load_speed_m_s": 0.02
 }

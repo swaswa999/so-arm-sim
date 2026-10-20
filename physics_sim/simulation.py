@@ -19,7 +19,7 @@ class Simulation:
         self.arm_q = np.array([self.model.joint(n).qposadr[0] for n in ARM_JOINTS])
         self.arm_v = np.array([self.model.joint(n).dofadr[0] for n in ARM_JOINTS])
         self.arm_a = np.array([self.model.actuator(n+'_motor').id for n in ARM_JOINTS])
-        spec = PROFILES[self.params['servo_profile']]
+        spec = replace(PROFILES[self.params['servo_profile']],**self.params['servo_controller'])
         self.servos = ServoBank(spec,self.data.qpos[self.arm_q],self.model.opt.timestep)
         self.lock_servo = ServoBank(replace(spec,stall_torque=self.params['locking_torque_limit_nm'],
                                             continuous_torque=min(.15,self.params['locking_torque_limit_nm']),
@@ -114,12 +114,20 @@ class Simulation:
         for name in ('tire_jaw_slide_15','tire_jaw_slide_25'):
             j=m.joint(name)
             force=1800*(self.state['tire_open']-d.qpos[j.qposadr[0]])-1.2*d.qvel[j.dofadr[0]]
-            d.ctrl[m.actuator(name+'_motor').id] = np.clip(force,-self.params['jaw_force_limit_n'],self.params['jaw_force_limit_n']) if self.motors_enabled else 0
+            velocity=d.qvel[j.dofadr[0]]
+            available=self.params['jaw_force_limit_n']
+            if force*velocity>0:
+                available*=max(0.,1-abs(velocity)/self.params['jaw_no_load_speed_m_s'])
+            d.ctrl[m.actuator(name+'_motor').id] = np.clip(force,-available,available) if self.motors_enabled else 0
         drive=m.joint('drive_turn')
         # Tool spin direction follows the existing CAD's local drive axis.
         drive_target=-self.state['nut_angle']
         torque=.08*(drive_target-d.qpos[drive.qposadr[0]])-.002*d.qvel[drive.dofadr[0]]
-        d.ctrl[m.actuator('drive_turn_motor').id]=np.clip(torque,-self.params['drive_torque_limit_nm'],self.params['drive_torque_limit_nm']) if self.motors_enabled else 0
+        available=self.params['drive_torque_limit_nm']
+        velocity=d.qvel[drive.dofadr[0]]
+        if torque*velocity>0:
+            available*=max(0.,1-abs(velocity)/self.params['drive_no_load_speed_rad_s'])
+        d.ctrl[m.actuator('drive_turn_motor').id]=np.clip(torque,-available,available) if self.motors_enabled else 0
         self.control_ticks+=1
         self.saturation_ticks+=self.servos.saturated
         self.peak_torque=np.maximum(self.peak_torque,np.abs(d.ctrl[self.arm_a]))
@@ -181,6 +189,7 @@ class Simulation:
                     sampled_maximum_penetration_m=self.max_penetration,
                     contact_pairs=self.contact_pairs,
                     final_joint_error_rad=dict(zip(ARM_JOINTS,(self.desired_q-self.data.qpos[self.arm_q]).tolist())),
+                    peak_latch_force_n=self.latch.peak_force,peak_latch_torque_nm=self.latch.peak_torque,
                     latch_events=self.latch.events,thread_events=self.thread.events,
                     attached_tool=self.latch.attached,nut_thread_engaged=self.thread.engaged,
                     unmeasured_parameters=self.params['provenance'])

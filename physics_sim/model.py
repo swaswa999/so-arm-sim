@@ -30,8 +30,9 @@ def parameters(path=None):
     if any(not math.isfinite(v) or v <= 0 for v in params['body_mass_kg'].values()):
         raise ValueError('Body masses must be finite and positive')
     positive = ('contact_time_constant','jaw_force_limit_n','locking_torque_limit_nm',
-                'drive_torque_limit_nm','latch_position_tolerance_m','latch_angle_tolerance_rad',
-                'latch_force_limit_n','latch_torque_limit_nm','thread_pitch_m','thread_engagement_m',
+                'drive_torque_limit_nm','drive_no_load_speed_rad_s','jaw_no_load_speed_m_s','latch_position_tolerance_m','latch_angle_tolerance_rad',
+                'latch_force_limit_n','latch_torque_limit_nm','latch_linear_speed_limit_m_s',
+                'latch_angular_speed_limit_rad_s','thread_pitch_m','thread_engagement_m',
                 'thread_breakaway_nm','thread_running_nm')
     if any(not math.isfinite(params[k]) or params[k] <= 0 for k in positive):
         raise ValueError('Contact and mechanism parameters must be finite and positive')
@@ -39,6 +40,10 @@ def parameters(path=None):
         raise ValueError('Unknown servo profile')
     if len(params['friction']) != 3 or any(not math.isfinite(v) or v < 0 for v in params['friction']):
         raise ValueError('Friction must contain three finite nonnegative values')
+    if any(not math.isfinite(params[k]) or params[k]<0 for k in ('joint_damping','joint_friction','reflected_motor_inertia')):
+        raise ValueError('Joint parameters must be finite and nonnegative')
+    if len(params['release_station_offset_m']) != 3 or not np.isfinite(params['release_station_offset_m']).all():
+        raise ValueError('Invalid release-station position offset')
     if len(params['gravity']) != 3 or not np.isfinite(params['gravity']).all():
         raise ValueError('Invalid gravity vector')
     return params
