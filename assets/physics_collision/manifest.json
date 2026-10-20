@@ -1,0 +1,3148 @@
+{
+  "wheel_mesh_0": {
+    "source": "assets/wheel_rev2/part_00.stl",
+    "source_sha256": "f61995a10e0a97873859ebc9bf16e2da19466b29bd5a1e4c2cacc6630af5fe0e",
+    "pieces": [
+      "wheel_mesh_0_00.stl",
+      "wheel_mesh_0_01.stl",
+      "wheel_mesh_0_02.stl",
+      "wheel_mesh_0_03.stl",
+      "wheel_mesh_0_04.stl",
+      "wheel_mesh_0_05.stl",
+      "wheel_mesh_0_06.stl",
+      "wheel_mesh_0_07.stl",
+      "wheel_mesh_0_08.stl",
+      "wheel_mesh_0_09.stl",
+      "wheel_mesh_0_10.stl",
+      "wheel_mesh_0_11.stl",
+      "wheel_mesh_0_12.stl",
+      "wheel_mesh_0_13.stl",
+      "wheel_mesh_0_14.stl",
+      "wheel_mesh_0_15.stl",
+      "wheel_mesh_0_16.stl",
+      "wheel_mesh_0_17.stl",
+      "wheel_mesh_0_18.stl",
+      "wheel_mesh_0_19.stl",
+      "wheel_mesh_0_20.stl",
+      "wheel_mesh_0_21.stl",
+      "wheel_mesh_0_22.stl",
+      "wheel_mesh_0_23.stl",
+      "wheel_mesh_0_24.stl",
+      "wheel_mesh_0_25.stl",
+      "wheel_mesh_0_26.stl",
+      "wheel_mesh_0_27.stl",
+      "wheel_mesh_0_28.stl",
+      "wheel_mesh_0_29.stl",
+      "wheel_mesh_0_30.stl",
+      "wheel_mesh_0_31.stl",
+      "wheel_mesh_0_32.stl",
+      "wheel_mesh_0_33.stl",
+      "wheel_mesh_0_34.stl",
+      "wheel_mesh_0_35.stl",
+      "wheel_mesh_0_36.stl",
+      "wheel_mesh_0_37.stl",
+      "wheel_mesh_0_38.stl",
+      "wheel_mesh_0_39.stl"
+    ],
+    "volume_m3": 5.360851032360238e-05,
+    "center_m": [
+      2.6637561674071588e-05,
+      -0.00850874658950791,
+      0.01362470496650061
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0008170044866261283,
+        -4.0246016655560055e-07,
+        -1.2885999049562012e-06
+      ],
+      [
+        -4.0246016655560055e-07,
+        0.0008707749536879618,
+        -0.00014290242917406538
+      ],
+      [
+        -1.2885999049562012e-06,
+        -0.00014290242917406538,
+        0.0009077380326444886
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_1": {
+    "source": "assets/wheel_rev2/part_01.stl",
+    "source_sha256": "f5d5405f126eff3628fe42b7a6471c91bf5bf57d45f0c13e933ae435e69ecd15",
+    "pieces": [
+      "wheel_mesh_1_00.stl",
+      "wheel_mesh_1_01.stl",
+      "wheel_mesh_1_02.stl",
+      "wheel_mesh_1_03.stl",
+      "wheel_mesh_1_04.stl",
+      "wheel_mesh_1_05.stl",
+      "wheel_mesh_1_06.stl",
+      "wheel_mesh_1_07.stl",
+      "wheel_mesh_1_08.stl",
+      "wheel_mesh_1_09.stl"
+    ],
+    "volume_m3": 6.331523104284273e-07,
+    "center_m": [
+      0.0020676298927064813,
+      0.006600000111150959,
+      0.06199999999999996
+    ],
+    "unit_inertia_m2": [
+      [
+        5.17721417595286e-06,
+        -1.0104799895229597e-13,
+        -1.2247950635191204e-19
+      ],
+      [
+        -1.0104799895229597e-13,
+        0.00019059792988798568,
+        -4.0826502117304015e-19
+      ],
+      [
+        -1.2247950635191204e-19,
+        -4.0826502117304015e-19,
+        0.0001871759827507506
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_2": {
+    "source": "assets/wheel_rev2/part_02.stl",
+    "source_sha256": "433784aab5762a1da96549ae7e7948ef70fb472f0980ae3fbb477833dbca100b",
+    "pieces": [
+      "wheel_mesh_2_00.stl",
+      "wheel_mesh_2_01.stl",
+      "wheel_mesh_2_02.stl",
+      "wheel_mesh_2_03.stl",
+      "wheel_mesh_2_04.stl",
+      "wheel_mesh_2_05.stl",
+      "wheel_mesh_2_06.stl",
+      "wheel_mesh_2_07.stl",
+      "wheel_mesh_2_08.stl",
+      "wheel_mesh_2_09.stl",
+      "wheel_mesh_2_10.stl",
+      "wheel_mesh_2_11.stl",
+      "wheel_mesh_2_12.stl",
+      "wheel_mesh_2_13.stl",
+      "wheel_mesh_2_14.stl",
+      "wheel_mesh_2_15.stl",
+      "wheel_mesh_2_16.stl",
+      "wheel_mesh_2_17.stl",
+      "wheel_mesh_2_18.stl",
+      "wheel_mesh_2_19.stl",
+      "wheel_mesh_2_20.stl",
+      "wheel_mesh_2_21.stl",
+      "wheel_mesh_2_22.stl",
+      "wheel_mesh_2_23.stl",
+      "wheel_mesh_2_24.stl",
+      "wheel_mesh_2_25.stl",
+      "wheel_mesh_2_26.stl",
+      "wheel_mesh_2_27.stl",
+      "wheel_mesh_2_28.stl",
+      "wheel_mesh_2_29.stl",
+      "wheel_mesh_2_30.stl",
+      "wheel_mesh_2_31.stl",
+      "wheel_mesh_2_32.stl",
+      "wheel_mesh_2_33.stl",
+      "wheel_mesh_2_34.stl",
+      "wheel_mesh_2_35.stl",
+      "wheel_mesh_2_36.stl",
+      "wheel_mesh_2_37.stl",
+      "wheel_mesh_2_38.stl",
+      "wheel_mesh_2_39.stl"
+    ],
+    "volume_m3": 3.461625503808988e-05,
+    "center_m": [
+      0.09500000001158089,
+      -0.0038970385883778983,
+      0.005183201511625911
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0005959802476470384,
+        1.2772123207418866e-14,
+        3.686441740140999e-14
+      ],
+      [
+        1.2772123207418866e-14,
+        0.0005758761223465604,
+        -1.0755537491433315e-05
+      ],
+      [
+        3.686441740140999e-14,
+        -1.0755537491433315e-05,
+        0.0010941319790741795
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_3": {
+    "source": "assets/wheel_rev2/part_03.stl",
+    "source_sha256": "8ba5664f1bce338c1feb4c18baee0934fe149937a6f755794e6176e240f4c249",
+    "pieces": [
+      "wheel_mesh_3_00.stl",
+      "wheel_mesh_3_01.stl",
+      "wheel_mesh_3_02.stl",
+      "wheel_mesh_3_03.stl",
+      "wheel_mesh_3_04.stl",
+      "wheel_mesh_3_05.stl",
+      "wheel_mesh_3_06.stl",
+      "wheel_mesh_3_07.stl",
+      "wheel_mesh_3_08.stl",
+      "wheel_mesh_3_09.stl",
+      "wheel_mesh_3_10.stl",
+      "wheel_mesh_3_11.stl",
+      "wheel_mesh_3_12.stl",
+      "wheel_mesh_3_13.stl",
+      "wheel_mesh_3_14.stl",
+      "wheel_mesh_3_15.stl",
+      "wheel_mesh_3_16.stl",
+      "wheel_mesh_3_17.stl",
+      "wheel_mesh_3_18.stl",
+      "wheel_mesh_3_19.stl",
+      "wheel_mesh_3_20.stl",
+      "wheel_mesh_3_21.stl",
+      "wheel_mesh_3_22.stl",
+      "wheel_mesh_3_23.stl",
+      "wheel_mesh_3_24.stl",
+      "wheel_mesh_3_25.stl",
+      "wheel_mesh_3_26.stl",
+      "wheel_mesh_3_27.stl",
+      "wheel_mesh_3_28.stl",
+      "wheel_mesh_3_29.stl",
+      "wheel_mesh_3_30.stl",
+      "wheel_mesh_3_31.stl",
+      "wheel_mesh_3_32.stl",
+      "wheel_mesh_3_33.stl",
+      "wheel_mesh_3_34.stl",
+      "wheel_mesh_3_35.stl",
+      "wheel_mesh_3_36.stl",
+      "wheel_mesh_3_37.stl",
+      "wheel_mesh_3_38.stl",
+      "wheel_mesh_3_39.stl"
+    ],
+    "volume_m3": 1.7630819280242452e-06,
+    "center_m": [
+      1.3804985808792666e-07,
+      -0.0013446883748271517,
+      0.05200013323457573
+    ],
+    "unit_inertia_m2": [
+      [
+        7.814486061940873e-05,
+        2.9438468283317476e-09,
+        4.454629007513304e-12
+      ],
+      [
+        2.9438468283317476e-09,
+        1.3919619749517654e-05,
+        2.1906876904830047e-09
+      ],
+      [
+        4.454629007513304e-12,
+        2.1906876904830047e-09,
+        7.814490951631306e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_4": {
+    "source": "assets/wheel_rev2/part_04.stl",
+    "source_sha256": "00abe17e3012136ce03934e51dd579c82a7ffcf9306c5fa5e6e7b32fd893f6c6",
+    "pieces": [
+      "wheel_mesh_4_00.stl",
+      "wheel_mesh_4_01.stl",
+      "wheel_mesh_4_02.stl",
+      "wheel_mesh_4_03.stl",
+      "wheel_mesh_4_04.stl",
+      "wheel_mesh_4_05.stl",
+      "wheel_mesh_4_06.stl",
+      "wheel_mesh_4_07.stl",
+      "wheel_mesh_4_08.stl",
+      "wheel_mesh_4_09.stl",
+      "wheel_mesh_4_10.stl",
+      "wheel_mesh_4_11.stl",
+      "wheel_mesh_4_12.stl",
+      "wheel_mesh_4_13.stl",
+      "wheel_mesh_4_14.stl",
+      "wheel_mesh_4_15.stl",
+      "wheel_mesh_4_16.stl",
+      "wheel_mesh_4_17.stl",
+      "wheel_mesh_4_18.stl",
+      "wheel_mesh_4_19.stl",
+      "wheel_mesh_4_20.stl",
+      "wheel_mesh_4_21.stl",
+      "wheel_mesh_4_22.stl",
+      "wheel_mesh_4_23.stl",
+      "wheel_mesh_4_24.stl",
+      "wheel_mesh_4_25.stl",
+      "wheel_mesh_4_26.stl",
+      "wheel_mesh_4_27.stl",
+      "wheel_mesh_4_28.stl",
+      "wheel_mesh_4_29.stl",
+      "wheel_mesh_4_30.stl",
+      "wheel_mesh_4_31.stl",
+      "wheel_mesh_4_32.stl",
+      "wheel_mesh_4_33.stl",
+      "wheel_mesh_4_34.stl",
+      "wheel_mesh_4_35.stl",
+      "wheel_mesh_4_36.stl",
+      "wheel_mesh_4_37.stl",
+      "wheel_mesh_4_38.stl",
+      "wheel_mesh_4_39.stl"
+    ],
+    "volume_m3": 3.75398210757972e-07,
+    "center_m": [
+      4.4829815812747676e-23,
+      -0.0034999999999999996,
+      0.05199999999999998
+    ],
+    "unit_inertia_m2": [
+      [
+        1.7808269540078607e-05,
+        9.144413848119155e-22,
+        3.4452610048412845e-21
+      ],
+      [
+        9.144413848119155e-22,
+        2.7449871731667e-05,
+        1.0328789563257065e-19
+      ],
+      [
+        3.4452610048412845e-21,
+        1.0328789563257065e-19,
+        1.7808268858255073e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_5": {
+    "source": "assets/wheel_rev2/part_05.stl",
+    "source_sha256": "fe8c3f63e1f6b4bf52996ca91d1eefda233f41b63107e5225f79392e89f56ccc",
+    "pieces": [
+      "wheel_mesh_5_00.stl",
+      "wheel_mesh_5_01.stl",
+      "wheel_mesh_5_02.stl",
+      "wheel_mesh_5_03.stl",
+      "wheel_mesh_5_04.stl",
+      "wheel_mesh_5_05.stl",
+      "wheel_mesh_5_06.stl",
+      "wheel_mesh_5_07.stl",
+      "wheel_mesh_5_08.stl",
+      "wheel_mesh_5_09.stl",
+      "wheel_mesh_5_10.stl",
+      "wheel_mesh_5_11.stl",
+      "wheel_mesh_5_12.stl",
+      "wheel_mesh_5_13.stl",
+      "wheel_mesh_5_14.stl",
+      "wheel_mesh_5_15.stl",
+      "wheel_mesh_5_16.stl",
+      "wheel_mesh_5_17.stl",
+      "wheel_mesh_5_18.stl",
+      "wheel_mesh_5_19.stl",
+      "wheel_mesh_5_20.stl",
+      "wheel_mesh_5_21.stl",
+      "wheel_mesh_5_22.stl",
+      "wheel_mesh_5_23.stl",
+      "wheel_mesh_5_24.stl",
+      "wheel_mesh_5_25.stl",
+      "wheel_mesh_5_26.stl",
+      "wheel_mesh_5_27.stl",
+      "wheel_mesh_5_28.stl",
+      "wheel_mesh_5_29.stl",
+      "wheel_mesh_5_30.stl",
+      "wheel_mesh_5_31.stl",
+      "wheel_mesh_5_32.stl",
+      "wheel_mesh_5_33.stl",
+      "wheel_mesh_5_34.stl",
+      "wheel_mesh_5_35.stl",
+      "wheel_mesh_5_36.stl",
+      "wheel_mesh_5_37.stl",
+      "wheel_mesh_5_38.stl",
+      "wheel_mesh_5_39.stl"
+    ],
+    "volume_m3": 1.740709040195857e-07,
+    "center_m": [
+      2.3201779916556042e-07,
+      -0.02058806099008178,
+      0.05200017704802748
+    ],
+    "unit_inertia_m2": [
+      [
+        9.771460296169454e-06,
+        -6.709483965630403e-09,
+        4.274764402453616e-10
+      ],
+      [
+        -6.709483965630403e-09,
+        1.4547865384063701e-05,
+        5.304047604723752e-09
+      ],
+      [
+        4.274764402453616e-10,
+        5.304047604723752e-09,
+        9.771628338352777e-06
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "wheel_mesh_6": {
+    "source": "assets/wheel_rev2/part_06.stl",
+    "source_sha256": "2ac2101bfdd1e3a28f8d305cae956ff0481e95365b4eafbd8bed67f46c02d9b8",
+    "pieces": [
+      "wheel_mesh_6_00.stl",
+      "wheel_mesh_6_01.stl",
+      "wheel_mesh_6_02.stl",
+      "wheel_mesh_6_03.stl",
+      "wheel_mesh_6_04.stl",
+      "wheel_mesh_6_05.stl",
+      "wheel_mesh_6_06.stl",
+      "wheel_mesh_6_07.stl",
+      "wheel_mesh_6_08.stl",
+      "wheel_mesh_6_09.stl",
+      "wheel_mesh_6_10.stl",
+      "wheel_mesh_6_11.stl",
+      "wheel_mesh_6_12.stl",
+      "wheel_mesh_6_13.stl",
+      "wheel_mesh_6_14.stl",
+      "wheel_mesh_6_15.stl",
+      "wheel_mesh_6_16.stl",
+      "wheel_mesh_6_17.stl",
+      "wheel_mesh_6_18.stl",
+      "wheel_mesh_6_19.stl",
+      "wheel_mesh_6_20.stl",
+      "wheel_mesh_6_21.stl",
+      "wheel_mesh_6_22.stl",
+      "wheel_mesh_6_23.stl",
+      "wheel_mesh_6_24.stl",
+      "wheel_mesh_6_25.stl",
+      "wheel_mesh_6_26.stl",
+      "wheel_mesh_6_27.stl",
+      "wheel_mesh_6_28.stl",
+      "wheel_mesh_6_29.stl",
+      "wheel_mesh_6_30.stl",
+      "wheel_mesh_6_31.stl",
+      "wheel_mesh_6_32.stl",
+      "wheel_mesh_6_33.stl",
+      "wheel_mesh_6_34.stl",
+      "wheel_mesh_6_35.stl",
+      "wheel_mesh_6_36.stl",
+      "wheel_mesh_6_37.stl",
+      "wheel_mesh_6_38.stl",
+      "wheel_mesh_6_39.stl"
+    ],
+    "volume_m3": 6.590151937778626e-06,
+    "center_m": [
+      3.151853142006638e-08,
+      -0.012983317083320485,
+      0.05199999737683164
+    ],
+    "unit_inertia_m2": [
+      [
+        8.772525255331503e-05,
+        3.4565098563034194e-11,
+        -5.100122419616807e-10
+      ],
+      [
+        3.4565098563034194e-11,
+        0.00015164641984639026,
+        -5.2171336998649765e-11
+      ],
+      [
+        -5.100122419616807e-10,
+        -5.2171336998649765e-11,
+        8.772634021933741e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_0": {
+    "source": "assets/socket_tool/part_00.stl",
+    "source_sha256": "d2e3a17c42fe6f1d4cf33fe1a2e688fca07dc9e98e299dd6bb7dc7ad420cf385",
+    "pieces": [
+      "tool_mesh_0_00.stl",
+      "tool_mesh_0_01.stl",
+      "tool_mesh_0_02.stl",
+      "tool_mesh_0_03.stl",
+      "tool_mesh_0_04.stl",
+      "tool_mesh_0_05.stl",
+      "tool_mesh_0_06.stl",
+      "tool_mesh_0_07.stl",
+      "tool_mesh_0_08.stl",
+      "tool_mesh_0_09.stl",
+      "tool_mesh_0_10.stl",
+      "tool_mesh_0_11.stl",
+      "tool_mesh_0_12.stl",
+      "tool_mesh_0_13.stl",
+      "tool_mesh_0_14.stl",
+      "tool_mesh_0_15.stl",
+      "tool_mesh_0_16.stl",
+      "tool_mesh_0_17.stl",
+      "tool_mesh_0_18.stl",
+      "tool_mesh_0_19.stl",
+      "tool_mesh_0_20.stl",
+      "tool_mesh_0_21.stl",
+      "tool_mesh_0_22.stl",
+      "tool_mesh_0_23.stl",
+      "tool_mesh_0_24.stl",
+      "tool_mesh_0_25.stl",
+      "tool_mesh_0_26.stl",
+      "tool_mesh_0_27.stl",
+      "tool_mesh_0_28.stl",
+      "tool_mesh_0_29.stl",
+      "tool_mesh_0_30.stl",
+      "tool_mesh_0_31.stl",
+      "tool_mesh_0_32.stl",
+      "tool_mesh_0_33.stl",
+      "tool_mesh_0_34.stl",
+      "tool_mesh_0_35.stl",
+      "tool_mesh_0_36.stl",
+      "tool_mesh_0_37.stl",
+      "tool_mesh_0_38.stl",
+      "tool_mesh_0_39.stl"
+    ],
+    "volume_m3": 2.7480928626993865e-05,
+    "center_m": [
+      0.013436765253093343,
+      -0.07476429999609734,
+      0.03597479565597475
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00037570678728618233,
+        1.8174782190753972e-07,
+        2.078668988715156e-08
+      ],
+      [
+        1.8174782190753972e-07,
+        0.0003192193002803483,
+        1.161957296187448e-05
+      ],
+      [
+        2.078668988715156e-08,
+        1.161957296187448e-05,
+        0.0004408749515483239
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_1": {
+    "source": "assets/socket_tool/part_01.stl",
+    "source_sha256": "517c04f9d47b2cde5061f5472d8eb20dad85286b7443bc10fb7135c85a87de3e",
+    "pieces": [
+      "tool_mesh_1_00.stl",
+      "tool_mesh_1_01.stl",
+      "tool_mesh_1_02.stl",
+      "tool_mesh_1_03.stl",
+      "tool_mesh_1_04.stl",
+      "tool_mesh_1_05.stl",
+      "tool_mesh_1_06.stl",
+      "tool_mesh_1_07.stl",
+      "tool_mesh_1_08.stl",
+      "tool_mesh_1_09.stl",
+      "tool_mesh_1_10.stl",
+      "tool_mesh_1_11.stl",
+      "tool_mesh_1_12.stl",
+      "tool_mesh_1_13.stl",
+      "tool_mesh_1_14.stl",
+      "tool_mesh_1_15.stl",
+      "tool_mesh_1_16.stl",
+      "tool_mesh_1_17.stl",
+      "tool_mesh_1_18.stl",
+      "tool_mesh_1_19.stl",
+      "tool_mesh_1_20.stl",
+      "tool_mesh_1_21.stl",
+      "tool_mesh_1_22.stl",
+      "tool_mesh_1_23.stl",
+      "tool_mesh_1_24.stl",
+      "tool_mesh_1_25.stl",
+      "tool_mesh_1_26.stl",
+      "tool_mesh_1_27.stl",
+      "tool_mesh_1_28.stl",
+      "tool_mesh_1_29.stl",
+      "tool_mesh_1_30.stl",
+      "tool_mesh_1_31.stl",
+      "tool_mesh_1_32.stl",
+      "tool_mesh_1_33.stl",
+      "tool_mesh_1_34.stl",
+      "tool_mesh_1_35.stl",
+      "tool_mesh_1_36.stl",
+      "tool_mesh_1_37.stl",
+      "tool_mesh_1_38.stl",
+      "tool_mesh_1_39.stl"
+    ],
+    "volume_m3": 2.9977354731965527e-06,
+    "center_m": [
+      -0.0008775015590163904,
+      -0.030142127367778028,
+      0.0053479953504518216
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0002602395433805931,
+        -1.8318433461283834e-07,
+        3.309121927673129e-06
+      ],
+      [
+        -1.8318433461283834e-07,
+        0.00019720083120388954,
+        -4.1377541776512014e-07
+      ],
+      [
+        3.309121927673129e-06,
+        -4.1377541776512014e-07,
+        7.378071401905039e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_2": {
+    "source": "assets/socket_tool/part_02.stl",
+    "source_sha256": "a457287edd4e9299e5fd669f4963feff13d706bc8c964fa6fd151002b1dd80fd",
+    "pieces": [
+      "tool_mesh_2_00.stl"
+    ],
+    "volume_m3": 1.2685007057667836e-07,
+    "center_m": [
+      0.017444642006825967,
+      -0.09724652642349083,
+      0.017087769429436076
+    ],
+    "unit_inertia_m2": [
+      [
+        4.868085482957775e-06,
+        -3.4284469094997364e-10,
+        -5.563118684346299e-14
+      ],
+      [
+        -3.4284469094997364e-10,
+        3.217920706112875e-06,
+        2.1373931021790978e-10
+      ],
+      [
+        -5.563118684346299e-14,
+        2.1373931021790978e-10,
+        4.868085387977149e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_3": {
+    "source": "assets/socket_tool/part_03.stl",
+    "source_sha256": "1241362a352919a4bcb64cd160ea09190992d4f7cfd878602569f485a3d852ac",
+    "pieces": [
+      "tool_mesh_3_00.stl"
+    ],
+    "volume_m3": 4.212107492948181e-06,
+    "center_m": [
+      0.012500357679357907,
+      0.02283356635767165,
+      -0.001010593016874124
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00022154500430228923,
+        -2.4569169220339052e-08,
+        -1.2139374828214278e-07
+      ],
+      [
+        -2.4569169220339052e-08,
+        0.0002777887936778301,
+        3.039445108699508e-06
+      ],
+      [
+        -1.2139374828214278e-07,
+        3.039445108699508e-06,
+        8.811062315090106e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_4": {
+    "source": "assets/socket_tool/part_04.stl",
+    "source_sha256": "e21fa3c5e77431f8e5a6f54b0e50839fe481bc2f91d9fd2c4e84bafd67efdf28",
+    "pieces": [
+      "tool_mesh_4_00.stl"
+    ],
+    "volume_m3": 7.566885510238341e-07,
+    "center_m": [
+      0.012368525115074106,
+      -0.09300443714482191,
+      0.012268082930543909
+    ],
+    "unit_inertia_m2": [
+      [
+        2.2826388369217077e-05,
+        4.2457083425899135e-09,
+        2.4785595336110432e-14
+      ],
+      [
+        4.2457083425899135e-09,
+        4.3267457999119056e-05,
+        -2.64434996965e-09
+      ],
+      [
+        2.4785595336110432e-14,
+        -2.64434996965e-09,
+        2.2826391394003377e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_5": {
+    "source": "assets/socket_tool/part_05.stl",
+    "source_sha256": "a95617a884940d5f6247f1e8bbb5088c025dc3b460d3328ad0cc5c106a08e313",
+    "pieces": [
+      "tool_mesh_5_00.stl"
+    ],
+    "volume_m3": 4.212105070645597e-06,
+    "center_m": [
+      0.012721835853839765,
+      -0.06524805356404173,
+      0.0252779562880243
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00022144810042100635,
+        -4.33618637704797e-08,
+        -3.5964232960646106e-06
+      ],
+      [
+        -4.33618637704797e-08,
+        0.00027778804815712445,
+        -3.062822373576109e-06
+      ],
+      [
+        -3.5964232960646106e-06,
+        -3.062822373576109e-06,
+        8.820828196800433e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_6": {
+    "source": "assets/socket_tool/part_06.stl",
+    "source_sha256": "c2856d8b15d30476fc3e53fb595d2834bf4dc57ae6418860a2f825de47e49c3a",
+    "pieces": [
+      "tool_mesh_6_00.stl"
+    ],
+    "volume_m3": 5.655207861286713e-07,
+    "center_m": [
+      0.012375501207259929,
+      -0.05942326825785709,
+      0.012263737396617702
+    ],
+    "unit_inertia_m2": [
+      [
+        2.4603259052331068e-05,
+        4.892803235846046e-09,
+        -6.227683217865465e-13
+      ],
+      [
+        4.892803235846046e-09,
+        4.808998127294956e-05,
+        -3.0300295370175856e-09
+      ],
+      [
+        -6.227683217865465e-13,
+        -3.0300295370175856e-09,
+        2.460326100842503e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_7": {
+    "source": "assets/socket_tool/part_07.stl",
+    "source_sha256": "de6a27b3acc46a17e17de9271066d1fb707af96755e8a735b6daae967d81caa0",
+    "pieces": [
+      "tool_mesh_7_00.stl",
+      "tool_mesh_7_01.stl",
+      "tool_mesh_7_02.stl",
+      "tool_mesh_7_03.stl",
+      "tool_mesh_7_04.stl",
+      "tool_mesh_7_05.stl",
+      "tool_mesh_7_06.stl",
+      "tool_mesh_7_07.stl",
+      "tool_mesh_7_08.stl",
+      "tool_mesh_7_09.stl",
+      "tool_mesh_7_10.stl",
+      "tool_mesh_7_11.stl",
+      "tool_mesh_7_12.stl",
+      "tool_mesh_7_13.stl",
+      "tool_mesh_7_14.stl",
+      "tool_mesh_7_15.stl",
+      "tool_mesh_7_16.stl",
+      "tool_mesh_7_17.stl",
+      "tool_mesh_7_18.stl",
+      "tool_mesh_7_19.stl",
+      "tool_mesh_7_20.stl",
+      "tool_mesh_7_21.stl",
+      "tool_mesh_7_22.stl",
+      "tool_mesh_7_23.stl",
+      "tool_mesh_7_24.stl",
+      "tool_mesh_7_25.stl",
+      "tool_mesh_7_26.stl",
+      "tool_mesh_7_27.stl",
+      "tool_mesh_7_28.stl",
+      "tool_mesh_7_29.stl",
+      "tool_mesh_7_30.stl",
+      "tool_mesh_7_31.stl",
+      "tool_mesh_7_32.stl",
+      "tool_mesh_7_33.stl",
+      "tool_mesh_7_34.stl",
+      "tool_mesh_7_35.stl",
+      "tool_mesh_7_36.stl",
+      "tool_mesh_7_37.stl",
+      "tool_mesh_7_38.stl",
+      "tool_mesh_7_39.stl"
+    ],
+    "volume_m3": 4.316720758857176e-06,
+    "center_m": [
+      0.012366690478741347,
+      -0.1018244195860549,
+      0.01226922603463891
+    ],
+    "unit_inertia_m2": [
+      [
+        4.625797355653424e-05,
+        -7.66321449729634e-10,
+        -1.3916590332235027e-12
+      ],
+      [
+        -7.66321449729634e-10,
+        4.256735347445864e-05,
+        4.783348754227269e-10
+      ],
+      [
+        -1.3916590332235027e-12,
+        4.783348754227269e-10,
+        4.625797396204567e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_8": {
+    "source": "assets/socket_tool/part_08.stl",
+    "source_sha256": "6033c3f921cd93091fb03c92f33e7ad668012f625a2c16db1ccc9a44908218fe",
+    "pieces": [
+      "tool_mesh_8_00.stl"
+    ],
+    "volume_m3": 1.2333331096012883e-05,
+    "center_m": [
+      0.012493392669773734,
+      -0.0785188165078728,
+      0.025262421024285695
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00017500559731809518,
+        -2.25471480560386e-07,
+        -2.6357274256028116e-06
+      ],
+      [
+        -2.25471480560386e-07,
+        0.00020965369024297342,
+        -9.471820712569713e-07
+      ],
+      [
+        -2.6357274256028116e-06,
+        -9.471820712569713e-07,
+        6.083169678621306e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_9": {
+    "source": "assets/socket_tool/part_09.stl",
+    "source_sha256": "d00a1d1188aff3818bdafc39aa8bd433f80c566d42ae468808ff40eb7821f109",
+    "pieces": [
+      "tool_mesh_9_00.stl"
+    ],
+    "volume_m3": 7.566884787371394e-07,
+    "center_m": [
+      -0.004757914354523582,
+      -0.030176616404692647,
+      -0.00769844809474418
+    ],
+    "unit_inertia_m2": [
+      [
+        4.325345702594166e-05,
+        -4.311250056135082e-09,
+        -5.348013169438568e-07
+      ],
+      [
+        -4.311250056135082e-09,
+        2.2826390241386326e-05,
+        1.1256176419692643e-10
+      ],
+      [
+        -5.348013169438568e-07,
+        1.1256176419692643e-10,
+        2.2840391336494736e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_10": {
+    "source": "assets/socket_tool/part_10.stl",
+    "source_sha256": "f8ee4d3817aca044ca9062db031c74d8ea3037f32b8f327daf0d0710ba79e949",
+    "pieces": [
+      "tool_mesh_10_00.stl"
+    ],
+    "volume_m3": 1.2333332513605948e-05,
+    "center_m": [
+      0.010061238725538615,
+      -0.02996296211508011,
+      0.004912999426044051
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0002095030490041675,
+        1.9177536828497923e-07,
+        -4.8282288699754535e-06
+      ],
+      [
+        1.9177536828497923e-07,
+        0.0001750653970316308,
+        -3.4598796815562804e-07
+      ],
+      [
+        -4.8282288699754535e-06,
+        -3.4598796815562804e-07,
+        6.092252892614995e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_11": {
+    "source": "assets/socket_tool/part_11.stl",
+    "source_sha256": "e257f3fc5016d2310ddcd64a98171a51e803d21044bf0a3eb1907fa83ecbb694",
+    "pieces": [
+      "tool_mesh_11_00.stl"
+    ],
+    "volume_m3": 5.655208018591116e-07,
+    "center_m": [
+      0.028811751574716493,
+      -0.030183704168623492,
+      -0.008577338690758668
+    ],
+    "unit_inertia_m2": [
+      [
+        4.807389592949395e-05,
+        -4.968118103489548e-09,
+        -6.144771620336151e-07
+      ],
+      [
+        -4.968118103489548e-09,
+        2.460326210483655e-05,
+        1.2961100193558476e-10
+      ],
+      [
+        -6.144771620336151e-07,
+        1.2961100193558476e-10,
+        2.4619346746831175e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_12": {
+    "source": "assets/socket_tool/part_12.stl",
+    "source_sha256": "77592aeec611437693cf295bd2993bb780d440406d0bf3a1b803b193bf20ddad",
+    "pieces": [
+      "tool_mesh_12_00.stl"
+    ],
+    "volume_m3": 7.56688473243692e-07,
+    "center_m": [
+      0.012508810782534626,
+      -0.004921200642185291,
+      0.012007506417510262
+    ],
+    "unit_inertia_m2": [
+      [
+        2.2826389126409454e-05,
+        -2.8934358091385204e-12,
+        -3.3539992205710133e-13
+      ],
+      [
+        -2.8934358091385204e-12,
+        4.3267460276012234e-05,
+        -2.876910494413221e-12
+      ],
+      [
+        -3.3539992205710133e-13,
+        -2.876910494413221e-12,
+        2.2826390280687987e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_13": {
+    "source": "assets/socket_tool/part_13.stl",
+    "source_sha256": "66c92824b2b95cd37e4bd8005d13bf0ebc9735b59b1299cb5d8f5029b393d4da",
+    "pieces": [
+      "tool_mesh_13_00.stl"
+    ],
+    "volume_m3": 1.268500704988722e-07,
+    "center_m": [
+      0.007548506280999107,
+      -0.09724443629813725,
+      0.01734563331067187
+    ],
+    "unit_inertia_m2": [
+      [
+        4.868085444765666e-06,
+        -3.4286123517087955e-10,
+        6.779967797038496e-14
+      ],
+      [
+        -3.4286123517087955e-10,
+        3.217920665462688e-06,
+        2.136411684968664e-10
+      ],
+      [
+        6.779967797038496e-14,
+        2.136411684968664e-10,
+        4.8680854136999494e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_14": {
+    "source": "assets/socket_tool/part_14.stl",
+    "source_sha256": "0e9b59e1888f09fac43644fe2ec9c6299b73cee984d983f92787e66c2805f432",
+    "pieces": [
+      "tool_mesh_14_00.stl",
+      "tool_mesh_14_01.stl",
+      "tool_mesh_14_02.stl",
+      "tool_mesh_14_03.stl",
+      "tool_mesh_14_04.stl",
+      "tool_mesh_14_05.stl",
+      "tool_mesh_14_06.stl",
+      "tool_mesh_14_07.stl",
+      "tool_mesh_14_08.stl",
+      "tool_mesh_14_09.stl",
+      "tool_mesh_14_10.stl",
+      "tool_mesh_14_11.stl",
+      "tool_mesh_14_12.stl",
+      "tool_mesh_14_13.stl",
+      "tool_mesh_14_14.stl",
+      "tool_mesh_14_15.stl",
+      "tool_mesh_14_16.stl",
+      "tool_mesh_14_17.stl",
+      "tool_mesh_14_18.stl",
+      "tool_mesh_14_19.stl",
+      "tool_mesh_14_20.stl",
+      "tool_mesh_14_21.stl",
+      "tool_mesh_14_22.stl",
+      "tool_mesh_14_23.stl",
+      "tool_mesh_14_24.stl",
+      "tool_mesh_14_25.stl",
+      "tool_mesh_14_26.stl",
+      "tool_mesh_14_27.stl",
+      "tool_mesh_14_28.stl",
+      "tool_mesh_14_29.stl",
+      "tool_mesh_14_30.stl",
+      "tool_mesh_14_31.stl",
+      "tool_mesh_14_32.stl",
+      "tool_mesh_14_33.stl",
+      "tool_mesh_14_34.stl",
+      "tool_mesh_14_35.stl",
+      "tool_mesh_14_36.stl",
+      "tool_mesh_14_37.stl",
+      "tool_mesh_14_38.stl",
+      "tool_mesh_14_39.stl"
+    ],
+    "volume_m3": 1.646559695967509e-05,
+    "center_m": [
+      0.01320566899076418,
+      -0.05216765393054958,
+      -0.00034245907008911825
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00027453198463748825,
+        -5.8685006393682545e-06,
+        8.95381106841322e-06
+      ],
+      [
+        -5.8685006393682545e-06,
+        0.0003833850398354433,
+        7.253557456170962e-05
+      ],
+      [
+        8.95381106841322e-06,
+        7.253557456170962e-05,
+        0.0004972022168722858
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_15": {
+    "source": "assets/socket_tool/part_15.stl",
+    "source_sha256": "0ce6659b18e38d1679af852bce8f050dd9c96baba3f5f45391a5fc52cd26e6c7",
+    "pieces": [
+      "tool_mesh_15_00.stl"
+    ],
+    "volume_m3": 0.0001166994187509965,
+    "center_m": [
+      0.013105446046675096,
+      0.026884710499152475,
+      0.006220088689398524
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0006505986162356062,
+        8.709077879452103e-06,
+        -1.4357557951356739e-06
+      ],
+      [
+        8.709077879452103e-06,
+        0.0003490151033730222,
+        -7.766371116008e-05
+      ],
+      [
+        -1.4357557951356739e-06,
+        -7.766371116008e-05,
+        0.00044899895888417306
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_16": {
+    "source": "assets/socket_tool/part_16.stl",
+    "source_sha256": "b555a0e10df104eca70721379205e8e8f4b0ce3c08512288fc675215fd5a3553",
+    "pieces": [
+      "tool_mesh_16_00.stl"
+    ],
+    "volume_m3": 1.2333333109522102e-05,
+    "center_m": [
+      0.01272551784722369,
+      0.009562761264177561,
+      -0.0009874728868213057
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00017506548470670123,
+        2.080663428160586e-07,
+        3.410419343473215e-07
+      ],
+      [
+        2.080663428160586e-07,
+        0.00020965383607178005,
+        9.341973477784364e-07
+      ],
+      [
+        3.410419343473215e-07,
+        9.341973477784364e-07,
+        6.0771663243729047e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_17": {
+    "source": "assets/socket_tool/part_17.stl",
+    "source_sha256": "6afc3fb1851080506d10a213232970fcdaaf756d8bee9afd9ecf5ed95122b99b",
+    "pieces": [
+      "tool_mesh_17_00.stl",
+      "tool_mesh_17_01.stl",
+      "tool_mesh_17_02.stl",
+      "tool_mesh_17_03.stl",
+      "tool_mesh_17_04.stl",
+      "tool_mesh_17_05.stl",
+      "tool_mesh_17_06.stl",
+      "tool_mesh_17_07.stl",
+      "tool_mesh_17_08.stl",
+      "tool_mesh_17_09.stl",
+      "tool_mesh_17_10.stl",
+      "tool_mesh_17_11.stl",
+      "tool_mesh_17_12.stl",
+      "tool_mesh_17_13.stl",
+      "tool_mesh_17_14.stl",
+      "tool_mesh_17_15.stl",
+      "tool_mesh_17_16.stl",
+      "tool_mesh_17_17.stl",
+      "tool_mesh_17_18.stl",
+      "tool_mesh_17_19.stl",
+      "tool_mesh_17_20.stl",
+      "tool_mesh_17_21.stl",
+      "tool_mesh_17_22.stl",
+      "tool_mesh_17_23.stl",
+      "tool_mesh_17_24.stl",
+      "tool_mesh_17_25.stl",
+      "tool_mesh_17_26.stl",
+      "tool_mesh_17_27.stl",
+      "tool_mesh_17_28.stl",
+      "tool_mesh_17_29.stl",
+      "tool_mesh_17_30.stl",
+      "tool_mesh_17_31.stl",
+      "tool_mesh_17_32.stl",
+      "tool_mesh_17_33.stl",
+      "tool_mesh_17_34.stl",
+      "tool_mesh_17_35.stl",
+      "tool_mesh_17_36.stl",
+      "tool_mesh_17_37.stl",
+      "tool_mesh_17_38.stl",
+      "tool_mesh_17_39.stl"
+    ],
+    "volume_m3": 4.212107222119385e-06,
+    "center_m": [
+      0.023328055424450676,
+      -0.030190924340016242,
+      0.004588787620496555
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0002774998241430686,
+        -3.3244416514412516e-08,
+        -7.997844720243345e-06
+      ],
+      [
+        -3.3244416514412516e-08,
+        0.0002215450189597898,
+        1.2297158351814016e-07
+      ],
+      [
+        -7.997844720243345e-06,
+        1.2297158351814016e-07,
+        8.839959820711792e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_18": {
+    "source": "assets/socket_tool/part_18.stl",
+    "source_sha256": "a2732a42e66874c2cddfa0d8c25853d01b49b064d679f84f19986d99606e8e53",
+    "pieces": [
+      "tool_mesh_18_00.stl"
+    ],
+    "volume_m3": 2.9977344661792813e-06,
+    "center_m": [
+      0.012676404814309596,
+      -0.08946517589650857,
+      0.025407619076439465
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00019713911094628448,
+        3.848436321311596e-07,
+        -2.7881661471679314e-06
+      ],
+      [
+        3.848436321311596e-07,
+        0.00025994072372334683,
+        8.152650241120455e-06
+      ],
+      [
+        -2.7881661471679314e-06,
+        8.152650241120455e-06,
+        7.414131711575943e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_19": {
+    "source": "assets/socket_tool/part_19.stl",
+    "source_sha256": "4e260a813f9671ffcf677da5d55429553f0db979d7192851c074428db395c854",
+    "pieces": [
+      "tool_mesh_19_00.stl"
+    ],
+    "volume_m3": 0.00015949656714663482,
+    "center_m": [
+      0.013464200350640936,
+      -0.04027600450139205,
+      0.02310675879833825
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0007296490333836911,
+        -3.042724565825148e-06,
+        1.1345390899466012e-06
+      ],
+      [
+        -3.042724565825148e-06,
+        0.0004195451687333795,
+        0.0001606896626826651
+      ],
+      [
+        1.1345390899466012e-06,
+        0.0001606896626826651,
+        0.0006610732890357221
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_20": {
+    "source": "assets/socket_tool/part_20.stl",
+    "source_sha256": "4937809adfe9ec7af61df1277789bf70a0c629f69ebdb5799b83ccc57e325b70",
+    "pieces": [
+      "tool_mesh_20_00.stl"
+    ],
+    "volume_m3": 2.997735276305082e-06,
+    "center_m": [
+      0.01254404816986011,
+      -0.0013835783677954494,
+      -0.0011360360454926131
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00019720079062882475,
+        -1.5904039103021402e-07,
+        4.1665500925214146e-07
+      ],
+      [
+        -1.5904039103021402e-07,
+        0.00025993876511649965,
+        -8.183032434409531e-06
+      ],
+      [
+        4.1665500925214146e-07,
+        -8.183032434409531e-06,
+        7.408158607782513e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tool_mesh_21": {
+    "source": "assets/socket_tool/part_21.stl",
+    "source_sha256": "0bc53ffdac9cc079512b01ea2511508e5a5b69ff06ca4711155ae5be7f8c3ea8",
+    "pieces": [
+      "tool_mesh_21_00.stl"
+    ],
+    "volume_m3": 1.2685006856160286e-07,
+    "center_m": [
+      0.01718677791032595,
+      -0.0972477540884842,
+      0.0071916336943953045
+    ],
+    "unit_inertia_m2": [
+      [
+        4.868085165113096e-06,
+        -3.429420164087205e-10,
+        -1.5614497927272825e-14
+      ],
+      [
+        -3.429420164087205e-10,
+        3.217920771438041e-06,
+        2.1363470004073794e-10
+      ],
+      [
+        -1.5614497927272825e-14,
+        2.1363470004073794e-10,
+        4.86808524668669e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "adapter_mesh": {
+    "source": "assets/generated_socket/socket_adapter.stl",
+    "source_sha256": "e09c1d8401eda35416cec23ada0055c0493da163b87c6421480a3476e79cbe6c",
+    "pieces": [
+      "adapter_mesh_00.stl",
+      "adapter_mesh_01.stl",
+      "adapter_mesh_02.stl",
+      "adapter_mesh_03.stl",
+      "adapter_mesh_04.stl",
+      "adapter_mesh_05.stl",
+      "adapter_mesh_06.stl",
+      "adapter_mesh_07.stl",
+      "adapter_mesh_08.stl",
+      "adapter_mesh_09.stl",
+      "adapter_mesh_10.stl",
+      "adapter_mesh_11.stl",
+      "adapter_mesh_12.stl",
+      "adapter_mesh_13.stl",
+      "adapter_mesh_14.stl",
+      "adapter_mesh_15.stl",
+      "adapter_mesh_16.stl",
+      "adapter_mesh_17.stl",
+      "adapter_mesh_18.stl",
+      "adapter_mesh_19.stl",
+      "adapter_mesh_20.stl",
+      "adapter_mesh_21.stl",
+      "adapter_mesh_22.stl",
+      "adapter_mesh_23.stl",
+      "adapter_mesh_24.stl",
+      "adapter_mesh_25.stl",
+      "adapter_mesh_26.stl",
+      "adapter_mesh_27.stl",
+      "adapter_mesh_28.stl",
+      "adapter_mesh_29.stl",
+      "adapter_mesh_30.stl",
+      "adapter_mesh_31.stl",
+      "adapter_mesh_32.stl",
+      "adapter_mesh_33.stl",
+      "adapter_mesh_34.stl",
+      "adapter_mesh_35.stl",
+      "adapter_mesh_36.stl",
+      "adapter_mesh_37.stl",
+      "adapter_mesh_38.stl",
+      "adapter_mesh_39.stl"
+    ],
+    "volume_m3": 1.5634677215389995e-06,
+    "center_m": [
+      0.012368000190160003,
+      -0.12043831692079361,
+      0.012268999800649407
+    ],
+    "unit_inertia_m2": [
+      [
+        4.422986817233631e-05,
+        -1.2345799870383458e-15,
+        -7.832681620195295e-11
+      ],
+      [
+        -1.2345799870383458e-15,
+        2.3364515181763415e-05,
+        2.839481063396379e-14
+      ],
+      [
+        -7.832681620195295e-11,
+        2.839481063396379e-14,
+        4.4231260217028044e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "docking_guide_mesh": {
+    "source": "assets/sim_two_tool_dock/Mayter_Socket_and_Tire_Funnel_Dock_Rev2.stl",
+    "source_sha256": "b33c44c665cf84b55aa76d111b1708b73c6fb31a0e44bdcfab35c44a23a321fd",
+    "pieces": [
+      "docking_guide_mesh_00.stl",
+      "docking_guide_mesh_01.stl",
+      "docking_guide_mesh_02.stl",
+      "docking_guide_mesh_03.stl",
+      "docking_guide_mesh_04.stl",
+      "docking_guide_mesh_05.stl",
+      "docking_guide_mesh_06.stl",
+      "docking_guide_mesh_07.stl",
+      "docking_guide_mesh_08.stl",
+      "docking_guide_mesh_09.stl",
+      "docking_guide_mesh_10.stl",
+      "docking_guide_mesh_11.stl",
+      "docking_guide_mesh_12.stl",
+      "docking_guide_mesh_13.stl",
+      "docking_guide_mesh_14.stl",
+      "docking_guide_mesh_15.stl",
+      "docking_guide_mesh_16.stl",
+      "docking_guide_mesh_17.stl",
+      "docking_guide_mesh_18.stl",
+      "docking_guide_mesh_19.stl",
+      "docking_guide_mesh_20.stl",
+      "docking_guide_mesh_21.stl",
+      "docking_guide_mesh_22.stl",
+      "docking_guide_mesh_23.stl",
+      "docking_guide_mesh_24.stl",
+      "docking_guide_mesh_25.stl",
+      "docking_guide_mesh_26.stl",
+      "docking_guide_mesh_27.stl",
+      "docking_guide_mesh_28.stl",
+      "docking_guide_mesh_29.stl",
+      "docking_guide_mesh_30.stl",
+      "docking_guide_mesh_31.stl",
+      "docking_guide_mesh_32.stl",
+      "docking_guide_mesh_33.stl",
+      "docking_guide_mesh_34.stl",
+      "docking_guide_mesh_35.stl"
+    ],
+    "volume_m3": 7.453274548322602e-05,
+    "center_m": [
+      0.01998755680278355,
+      -0.052259227005243394,
+      0.006896404063178709
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0005073813622912261,
+        -6.469593294670369e-05,
+        -9.861780205560687e-07
+      ],
+      [
+        -6.469593294670369e-05,
+        0.009476629742776212,
+        -5.01423506670709e-07
+      ],
+      [
+        -9.861780205560687e-07,
+        -5.01423506670709e-07,
+        0.009938191511227226
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_0": {
+    "source": "assets/tire_tool/part_00.stl",
+    "source_sha256": "2c867ad2db51e6b4611fcf2246af817578a2f10a5c1a86631743941540200fd9",
+    "pieces": [
+      "tire_tool_part_0_00.stl"
+    ],
+    "volume_m3": 1.2685006948435735e-07,
+    "center_m": [
+      0.007290522104666958,
+      -0.09782397409843198,
+      0.007449572358588461
+    ],
+    "unit_inertia_m2": [
+      [
+        4.868085478575563e-06,
+        -3.4305880155544075e-10,
+        6.716366480899734e-14
+      ],
+      [
+        -3.4305880155544075e-10,
+        3.2179206390496935e-06,
+        2.1361664875209584e-10
+      ],
+      [
+        6.716366480899734e-14,
+        2.1361664875209584e-10,
+        4.868085444445008e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_3": {
+    "source": "assets/tire_tool/part_03.stl",
+    "source_sha256": "e21fa3c5e77431f8e5a6f54b0e50839fe481bc2f91d9fd2c4e84bafd67efdf28",
+    "pieces": [
+      "tire_tool_part_3_00.stl"
+    ],
+    "volume_m3": 7.566885510238341e-07,
+    "center_m": [
+      0.012368525115074106,
+      -0.09300443714482191,
+      0.012268082930543909
+    ],
+    "unit_inertia_m2": [
+      [
+        2.2826388369217077e-05,
+        4.2457083425899135e-09,
+        2.4785595336110432e-14
+      ],
+      [
+        4.2457083425899135e-09,
+        4.3267457999119056e-05,
+        -2.64434996965e-09
+      ],
+      [
+        2.4785595336110432e-14,
+        -2.64434996965e-09,
+        2.2826391394003377e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_4": {
+    "source": "assets/tire_tool/part_04.stl",
+    "source_sha256": "a95617a884940d5f6247f1e8bbb5088c025dc3b460d3328ad0cc5c106a08e313",
+    "pieces": [
+      "tire_tool_part_4_00.stl"
+    ],
+    "volume_m3": 4.212105070645597e-06,
+    "center_m": [
+      0.012721835853839765,
+      -0.06524805356404173,
+      0.0252779562880243
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00022144810042100635,
+        -4.33618637704797e-08,
+        -3.5964232960646106e-06
+      ],
+      [
+        -4.33618637704797e-08,
+        0.00027778804815712445,
+        -3.062822373576109e-06
+      ],
+      [
+        -3.5964232960646106e-06,
+        -3.062822373576109e-06,
+        8.820828196800433e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_5": {
+    "source": "assets/tire_tool/part_05.stl",
+    "source_sha256": "c2856d8b15d30476fc3e53fb595d2834bf4dc57ae6418860a2f825de47e49c3a",
+    "pieces": [
+      "tire_tool_part_5_00.stl"
+    ],
+    "volume_m3": 5.655207861286713e-07,
+    "center_m": [
+      0.012375501207259929,
+      -0.05942326825785709,
+      0.012263737396617702
+    ],
+    "unit_inertia_m2": [
+      [
+        2.4603259052331068e-05,
+        4.892803235846046e-09,
+        -6.227683217865465e-13
+      ],
+      [
+        4.892803235846046e-09,
+        4.808998127294956e-05,
+        -3.0300295370175856e-09
+      ],
+      [
+        -6.227683217865465e-13,
+        -3.0300295370175856e-09,
+        2.460326100842503e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_6": {
+    "source": "assets/tire_tool/part_06.stl",
+    "source_sha256": "695bd38566e114423a2943be0c2358e7f914a776f2b6a64f6b5abe29039ae5a4",
+    "pieces": [
+      "tire_tool_part_6_00.stl"
+    ],
+    "volume_m3": 5.007663873231496e-08,
+    "center_m": [
+      -0.021120192643438222,
+      -0.09695687490636253,
+      0.02668846180754891
+    ],
+    "unit_inertia_m2": [
+      [
+        2.9622247152866154e-06,
+        3.2104851870614256e-15,
+        -7.73979576089319e-12
+      ],
+      [
+        3.2104851870614256e-15,
+        5.002713225417645e-06,
+        -2.5396876148150518e-16
+      ],
+      [
+        -7.73979576089319e-12,
+        -2.5396876148150518e-16,
+        2.962236375692418e-06
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_7": {
+    "source": "assets/tire_tool/part_07.stl",
+    "source_sha256": "5042791c59598fd07c7e1dfcf410d7031ca675835aca0a6b6f1bf4a1979111af",
+    "pieces": [
+      "tire_tool_part_7_00.stl"
+    ],
+    "volume_m3": 1.0336008369332833e-07,
+    "center_m": [
+      0.02287417041993623,
+      -0.09465407925065798,
+      0.020140265843542424
+    ],
+    "unit_inertia_m2": [
+      [
+        1.4785175323414944e-05,
+        -9.094197636499819e-14,
+        4.092283898337179e-14
+      ],
+      [
+        -9.094197636499819e-14,
+        1.3379714246309792e-06,
+        -1.0990585283433863e-13
+      ],
+      [
+        4.092283898337179e-14,
+        -1.0990585283433863e-13,
+        1.478517526460762e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_8": {
+    "source": "assets/tire_tool/part_08.stl",
+    "source_sha256": "0e0a204a0033799c2abc1b6a63c4af32b7d44c4f6996837ec03e6bd21dc11639",
+    "pieces": [
+      "tire_tool_part_8_00.stl"
+    ],
+    "volume_m3": 5.00766333170345e-08,
+    "center_m": [
+      0.04685673461801005,
+      -0.09695687490768923,
+      0.02491718366141292
+    ],
+    "unit_inertia_m2": [
+      [
+        2.962224235596804e-06,
+        3.2293267147235904e-15,
+        -7.914405366765655e-12
+      ],
+      [
+        3.2293267147235904e-15,
+        5.0027126033808375e-06,
+        1.5950478817928221e-16
+      ],
+      [
+        -7.914405366765655e-12,
+        1.5950478817928221e-16,
+        2.962236233716283e-06
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_9": {
+    "source": "assets/tire_tool/part_09.stl",
+    "source_sha256": "6033c3f921cd93091fb03c92f33e7ad668012f625a2c16db1ccc9a44908218fe",
+    "pieces": [
+      "tire_tool_part_9_00.stl"
+    ],
+    "volume_m3": 1.2333331096012883e-05,
+    "center_m": [
+      0.012493392669773734,
+      -0.0785188165078728,
+      0.025262421024285695
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00017500559731809518,
+        -2.25471480560386e-07,
+        -2.6357274256028116e-06
+      ],
+      [
+        -2.25471480560386e-07,
+        0.00020965369024297342,
+        -9.471820712569713e-07
+      ],
+      [
+        -2.6357274256028116e-06,
+        -9.471820712569713e-07,
+        6.083169678621306e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_10": {
+    "source": "assets/tire_tool/part_10.stl",
+    "source_sha256": "bd7d32d7b7ede11b415a579bd2537fec896d5ff63dd721b80f13294554b1143e",
+    "pieces": [
+      "tire_tool_part_10_00.stl"
+    ],
+    "volume_m3": 3.309939627635945e-07,
+    "center_m": [
+      0.04613780725798818,
+      -0.1071868245533293,
+      -0.002673451086060972
+    ],
+    "unit_inertia_m2": [
+      [
+        3.363925868425397e-05,
+        -3.645146562472247e-13,
+        1.3183866856954506e-13
+      ],
+      [
+        -3.645146562472247e-13,
+        2.821449667086222e-06,
+        -6.63159169098234e-14
+      ],
+      [
+        1.3183866856954506e-13,
+        -6.63159169098234e-14,
+        3.363925854189384e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_12": {
+    "source": "assets/tire_tool/part_12.stl",
+    "source_sha256": "ad0c178cd924fbedaf26cf912fdbb8aae63f1be0c7754125faa5e1bc750e2ab4",
+    "pieces": [
+      "tire_tool_part_12_00.stl"
+    ],
+    "volume_m3": 1.033600846652263e-07,
+    "center_m": [
+      0.002581058427388797,
+      -0.09465407930945338,
+      0.02066904444494191
+    ],
+    "unit_inertia_m2": [
+      [
+        1.4785175343317124e-05,
+        -5.00714058639882e-14,
+        -5.085033674139222e-14
+      ],
+      [
+        -5.00714058639882e-14,
+        1.3379714509316546e-06,
+        3.5467860626586714e-14
+      ],
+      [
+        -5.085033674139222e-14,
+        3.5467860626586714e-14,
+        1.4785175398008954e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_14": {
+    "source": "assets/tire_tool/part_14.stl",
+    "source_sha256": "471c87b8820043739ba05be8d0a7e7fe801f1451560d34eebf7e69800094ca52",
+    "pieces": [
+      "tire_tool_part_14_00.stl"
+    ],
+    "volume_m3": 1.2685006937368853e-07,
+    "center_m": [
+      0.01718665784027539,
+      -0.09782606412069221,
+      0.0071917084458752115
+    ],
+    "unit_inertia_m2": [
+      [
+        4.8680854407528765e-06,
+        -3.4308848798781217e-10,
+        1.1050864676183774e-13
+      ],
+      [
+        -3.4308848798781217e-10,
+        3.217920672329035e-06,
+        2.1364340167125972e-10
+      ],
+      [
+        1.1050864676183774e-13,
+        2.1364340167125972e-10,
+        4.868085522556332e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_15": {
+    "source": "assets/tire_tool/part_15.stl",
+    "source_sha256": "2d1380aae9d35af5642867141a12cc38e54d070e1375ee6cfdc6fcc82fe8c3a0",
+    "pieces": [
+      "tire_tool_part_15_00.stl",
+      "tire_tool_part_15_01.stl",
+      "tire_tool_part_15_02.stl",
+      "tire_tool_part_15_03.stl",
+      "tire_tool_part_15_04.stl",
+      "tire_tool_part_15_05.stl",
+      "tire_tool_part_15_06.stl",
+      "tire_tool_part_15_07.stl",
+      "tire_tool_part_15_08.stl",
+      "tire_tool_part_15_09.stl",
+      "tire_tool_part_15_10.stl",
+      "tire_tool_part_15_11.stl",
+      "tire_tool_part_15_12.stl",
+      "tire_tool_part_15_13.stl",
+      "tire_tool_part_15_14.stl",
+      "tire_tool_part_15_15.stl",
+      "tire_tool_part_15_16.stl",
+      "tire_tool_part_15_17.stl",
+      "tire_tool_part_15_18.stl",
+      "tire_tool_part_15_19.stl",
+      "tire_tool_part_15_20.stl",
+      "tire_tool_part_15_21.stl",
+      "tire_tool_part_15_22.stl",
+      "tire_tool_part_15_23.stl",
+      "tire_tool_part_15_24.stl",
+      "tire_tool_part_15_25.stl",
+      "tire_tool_part_15_26.stl",
+      "tire_tool_part_15_27.stl",
+      "tire_tool_part_15_28.stl",
+      "tire_tool_part_15_29.stl",
+      "tire_tool_part_15_30.stl",
+      "tire_tool_part_15_31.stl",
+      "tire_tool_part_15_32.stl",
+      "tire_tool_part_15_33.stl",
+      "tire_tool_part_15_34.stl",
+      "tire_tool_part_15_35.stl",
+      "tire_tool_part_15_36.stl",
+      "tire_tool_part_15_37.stl",
+      "tire_tool_part_15_38.stl",
+      "tire_tool_part_15_39.stl"
+    ],
+    "volume_m3": 6.900718038727729e-06,
+    "center_m": [
+      0.03426803991446173,
+      -0.12204342882132642,
+      0.012846978363016633
+    ],
+    "unit_inertia_m2": [
+      [
+        0.000149792645535515,
+        7.786962312226795e-06,
+        1.0598334385872816e-05
+      ],
+      [
+        7.786962312226795e-06,
+        6.666838907320542e-05,
+        -1.6102170409798556e-05
+      ],
+      [
+        1.0598334385872816e-05,
+        -1.6102170409798556e-05,
+        0.0001364017825843322
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_16": {
+    "source": "assets/tire_tool/part_16.stl",
+    "source_sha256": "c46eb3c897c3de4e86792f271039730a321b57b13eed8b42bfbc92d970123972",
+    "pieces": [
+      "tire_tool_part_16_00.stl"
+    ],
+    "volume_m3": 3.3099394674000837e-07,
+    "center_m": [
+      -0.021839119120491336,
+      -0.1071868247181656,
+      -0.000902172998030492
+    ],
+    "unit_inertia_m2": [
+      [
+        3.363925857056099e-05,
+        3.8077650495263034e-13,
+        -5.8210107661932264e-15
+      ],
+      [
+        3.8077650495263034e-13,
+        2.8214495808769295e-06,
+        -1.350732664516455e-13
+      ],
+      [
+        -5.8210107661932264e-15,
+        -1.350732664516455e-13,
+        3.363925853705331e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_17": {
+    "source": "assets/tire_tool/part_17.stl",
+    "source_sha256": "208c543409193f9583c54c4110b676ca9d0e38e687cb3cb0b00f43682c3a2cf1",
+    "pieces": [
+      "tire_tool_part_17_00.stl"
+    ],
+    "volume_m3": 1.0336009102988985e-07,
+    "center_m": [
+      0.003221844374085399,
+      -0.09465407923007974,
+      0.045260697299771856
+    ],
+    "unit_inertia_m2": [
+      [
+        1.4785175251106548e-05,
+        2.4559728832269376e-13,
+        -5.915391428526915e-14
+      ],
+      [
+        2.4559728832269376e-13,
+        1.3379715149251268e-06,
+        -2.7934277233926555e-13
+      ],
+      [
+        -5.915391428526915e-14,
+        -2.7934277233926555e-13,
+        1.4785175211509192e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_18": {
+    "source": "assets/tire_tool/part_18.stl",
+    "source_sha256": "1fff86e395b4068d331b0fa90a22bc2f3b015480767d2b853531e7db564b566b",
+    "pieces": [
+      "tire_tool_part_18_00.stl"
+    ],
+    "volume_m3": 5.00766463794023e-08,
+    "center_m": [
+      0.046137803569323746,
+      -0.09695687490696148,
+      -0.0026734509276277857
+    ],
+    "unit_inertia_m2": [
+      [
+        2.962224956411367e-06,
+        4.797014918775295e-15,
+        -7.741247010993476e-12
+      ],
+      [
+        4.797014918775295e-15,
+        5.00271344089115e-06,
+        1.8892795225134596e-16
+      ],
+      [
+        -7.741247010993476e-12,
+        1.8892795225134596e-16,
+        2.962236323510421e-06
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_19": {
+    "source": "assets/tire_tool/part_19.stl",
+    "source_sha256": "a065093622de50082bbe97c724684ff9b3723de1fb0f5cf541ea4d48b74e6048",
+    "pieces": [
+      "tire_tool_part_19_00.stl"
+    ],
+    "volume_m3": 1.0336009628157896e-07,
+    "center_m": [
+      0.023514956319067876,
+      -0.09465407945168317,
+      0.04473191879580618
+    ],
+    "unit_inertia_m2": [
+      [
+        1.4785174415950719e-05,
+        1.4003651142874846e-13,
+        6.055445020697261e-14
+      ],
+      [
+        1.4003651142874846e-13,
+        1.337971631360877e-06,
+        -2.1454977152421973e-13
+      ],
+      [
+        6.055445020697261e-14,
+        -2.1454977152421973e-13,
+        1.478517454200041e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_21": {
+    "source": "assets/tire_tool/part_21.stl",
+    "source_sha256": "e7c946773e35f9a5e6c5b30913b074d1769012be6d403e3086443ef506900e7e",
+    "pieces": [
+      "tire_tool_part_21_00.stl"
+    ],
+    "volume_m3": 1.1565858906411443e-05,
+    "center_m": [
+      0.012508809029331878,
+      -0.1061464376432552,
+      0.012007505568708129
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0001537791345289532,
+        6.093175691452255e-14,
+        1.6550496224630816e-05
+      ],
+      [
+        6.093175691452255e-14,
+        0.0007931738657512872,
+        1.0966792216956393e-13
+      ],
+      [
+        1.6550496224630816e-05,
+        1.0966792216956393e-13,
+        0.0006484318830276624
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_22": {
+    "source": "assets/tire_tool/part_22.stl",
+    "source_sha256": "a0374b4e138e878eedd81ab790e0f63c512a1e3379ae4106341a06eb2fc81f5b",
+    "pieces": [
+      "tire_tool_part_22_00.stl"
+    ],
+    "volume_m3": 6.964964804413286e-07,
+    "center_m": [
+      0.012510512716888925,
+      -0.10735687999651777,
+      0.012072872116171729
+    ],
+    "unit_inertia_m2": [
+      [
+        1.941647631970308e-05,
+        -1.3590948986426517e-14,
+        -3.91625833239326e-09
+      ],
+      [
+        -1.3590948986426517e-14,
+        3.4531957847904344e-05,
+        7.979601696876092e-14
+      ],
+      [
+        -3.91625833239326e-09,
+        7.979601696876092e-14,
+        1.9266271628622482e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_23": {
+    "source": "assets/tire_tool/part_23.stl",
+    "source_sha256": "8b4f0d78f97a988bc4b735c946d9645dcbd5c9d8ef0c2e83a0f6ea8dd0966177",
+    "pieces": [
+      "tire_tool_part_23_00.stl",
+      "tire_tool_part_23_01.stl",
+      "tire_tool_part_23_02.stl",
+      "tire_tool_part_23_03.stl",
+      "tire_tool_part_23_04.stl",
+      "tire_tool_part_23_05.stl",
+      "tire_tool_part_23_06.stl",
+      "tire_tool_part_23_07.stl",
+      "tire_tool_part_23_08.stl",
+      "tire_tool_part_23_09.stl",
+      "tire_tool_part_23_10.stl",
+      "tire_tool_part_23_11.stl",
+      "tire_tool_part_23_12.stl",
+      "tire_tool_part_23_13.stl",
+      "tire_tool_part_23_14.stl",
+      "tire_tool_part_23_15.stl",
+      "tire_tool_part_23_16.stl",
+      "tire_tool_part_23_17.stl",
+      "tire_tool_part_23_18.stl",
+      "tire_tool_part_23_19.stl",
+      "tire_tool_part_23_20.stl",
+      "tire_tool_part_23_21.stl",
+      "tire_tool_part_23_22.stl",
+      "tire_tool_part_23_23.stl",
+      "tire_tool_part_23_24.stl",
+      "tire_tool_part_23_25.stl",
+      "tire_tool_part_23_26.stl",
+      "tire_tool_part_23_27.stl",
+      "tire_tool_part_23_28.stl",
+      "tire_tool_part_23_29.stl",
+      "tire_tool_part_23_30.stl",
+      "tire_tool_part_23_31.stl",
+      "tire_tool_part_23_32.stl",
+      "tire_tool_part_23_33.stl",
+      "tire_tool_part_23_34.stl",
+      "tire_tool_part_23_35.stl",
+      "tire_tool_part_23_36.stl",
+      "tire_tool_part_23_37.stl",
+      "tire_tool_part_23_38.stl",
+      "tire_tool_part_23_39.stl"
+    ],
+    "volume_m3": 0.00015304526086848378,
+    "center_m": [
+      0.012929548645972492,
+      -0.08119411905841953,
+      0.02489929832367246
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0004246278396505648,
+        -2.001295588540181e-06,
+        2.4032537618158204e-06
+      ],
+      [
+        -2.001295588540181e-06,
+        0.0005453705122956676,
+        -5.3208426175392905e-05
+      ],
+      [
+        2.4032537618158204e-06,
+        -5.3208426175392905e-05,
+        0.0005446440248391693
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_24": {
+    "source": "assets/tire_tool/part_24.stl",
+    "source_sha256": "bb3dd2ebebea07cfde8d285b3d7d5b8e34dcf112bb806b31030a75529eee6146",
+    "pieces": [
+      "tire_tool_part_24_00.stl",
+      "tire_tool_part_24_01.stl",
+      "tire_tool_part_24_02.stl",
+      "tire_tool_part_24_03.stl",
+      "tire_tool_part_24_04.stl",
+      "tire_tool_part_24_05.stl",
+      "tire_tool_part_24_06.stl",
+      "tire_tool_part_24_07.stl",
+      "tire_tool_part_24_08.stl",
+      "tire_tool_part_24_09.stl",
+      "tire_tool_part_24_10.stl",
+      "tire_tool_part_24_11.stl",
+      "tire_tool_part_24_12.stl",
+      "tire_tool_part_24_13.stl",
+      "tire_tool_part_24_14.stl",
+      "tire_tool_part_24_15.stl",
+      "tire_tool_part_24_16.stl",
+      "tire_tool_part_24_17.stl",
+      "tire_tool_part_24_18.stl",
+      "tire_tool_part_24_19.stl",
+      "tire_tool_part_24_20.stl",
+      "tire_tool_part_24_21.stl",
+      "tire_tool_part_24_22.stl",
+      "tire_tool_part_24_23.stl",
+      "tire_tool_part_24_24.stl",
+      "tire_tool_part_24_25.stl",
+      "tire_tool_part_24_26.stl",
+      "tire_tool_part_24_27.stl",
+      "tire_tool_part_24_28.stl",
+      "tire_tool_part_24_29.stl",
+      "tire_tool_part_24_30.stl",
+      "tire_tool_part_24_31.stl",
+      "tire_tool_part_24_32.stl",
+      "tire_tool_part_24_33.stl",
+      "tire_tool_part_24_34.stl",
+      "tire_tool_part_24_35.stl",
+      "tire_tool_part_24_36.stl",
+      "tire_tool_part_24_37.stl",
+      "tire_tool_part_24_38.stl",
+      "tire_tool_part_24_39.stl"
+    ],
+    "volume_m3": 2.2940201587084834e-06,
+    "center_m": [
+      0.012366154939908,
+      -0.09908222613213796,
+      0.012226442507567114
+    ],
+    "unit_inertia_m2": [
+      [
+        4.1964416685820356e-05,
+        -6.84500209264609e-09,
+        2.3530665968201918e-09
+      ],
+      [
+        -6.84500209264609e-09,
+        5.204118089796071e-05,
+        -3.443831791565715e-07
+      ],
+      [
+        2.3530665968201918e-09,
+        -3.443831791565715e-07,
+        4.205745253352488e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_25": {
+    "source": "assets/tire_tool/part_25.stl",
+    "source_sha256": "597828f08c889ed227325343e97d635c38f3a8b3177569ce378cbaf487b84e12",
+    "pieces": [
+      "tire_tool_part_25_00.stl",
+      "tire_tool_part_25_01.stl",
+      "tire_tool_part_25_02.stl",
+      "tire_tool_part_25_03.stl",
+      "tire_tool_part_25_04.stl",
+      "tire_tool_part_25_05.stl",
+      "tire_tool_part_25_06.stl",
+      "tire_tool_part_25_07.stl",
+      "tire_tool_part_25_08.stl",
+      "tire_tool_part_25_09.stl",
+      "tire_tool_part_25_10.stl",
+      "tire_tool_part_25_11.stl",
+      "tire_tool_part_25_12.stl",
+      "tire_tool_part_25_13.stl",
+      "tire_tool_part_25_14.stl",
+      "tire_tool_part_25_15.stl",
+      "tire_tool_part_25_16.stl",
+      "tire_tool_part_25_17.stl",
+      "tire_tool_part_25_18.stl",
+      "tire_tool_part_25_19.stl",
+      "tire_tool_part_25_20.stl",
+      "tire_tool_part_25_21.stl",
+      "tire_tool_part_25_22.stl",
+      "tire_tool_part_25_23.stl",
+      "tire_tool_part_25_24.stl",
+      "tire_tool_part_25_25.stl",
+      "tire_tool_part_25_26.stl",
+      "tire_tool_part_25_27.stl",
+      "tire_tool_part_25_28.stl",
+      "tire_tool_part_25_29.stl",
+      "tire_tool_part_25_30.stl",
+      "tire_tool_part_25_31.stl",
+      "tire_tool_part_25_32.stl",
+      "tire_tool_part_25_33.stl",
+      "tire_tool_part_25_34.stl",
+      "tire_tool_part_25_35.stl",
+      "tire_tool_part_25_36.stl",
+      "tire_tool_part_25_37.stl",
+      "tire_tool_part_25_38.stl",
+      "tire_tool_part_25_39.stl"
+    ],
+    "volume_m3": 6.900719401415837e-06,
+    "center_m": [
+      -0.009121971279585873,
+      -0.12172181587757083,
+      0.011608420092662877
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00014979268931938325,
+        -7.786961727292609e-06,
+        1.0598335768892071e-05
+      ],
+      [
+        -7.786961727292609e-06,
+        6.666838686449325e-05,
+        1.6102172270574416e-05
+      ],
+      [
+        1.0598335768892071e-05,
+        1.6102172270574416e-05,
+        0.00013640182417152673
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "CoACD approximate convex decomposition",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_27": {
+    "source": "assets/tire_tool/part_27.stl",
+    "source_sha256": "cda7fa707720ab4799add52b20fe50083a75b1660a50af605205ca1cadd57c15",
+    "pieces": [
+      "tire_tool_part_27_00.stl"
+    ],
+    "volume_m3": 5.4050960681267905e-06,
+    "center_m": [
+      0.012508808914229636,
+      -0.11135389093367161,
+      0.01200750546370024
+    ],
+    "unit_inertia_m2": [
+      [
+        0.0001419521922153748,
+        6.398422914725853e-14,
+        1.0329577828165423e-05
+      ],
+      [
+        6.398422914725853e-14,
+        0.0006791007767699112,
+        -2.872324059591735e-14
+      ],
+      [
+        1.0329577828165423e-05,
+        -2.872324059591735e-14,
+        0.0005381044855226949
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_28": {
+    "source": "assets/tire_tool/part_28.stl",
+    "source_sha256": "6474e25cec875bac011a609fcfe2ede86afaadd7c02bc952cb336568e18dc47d",
+    "pieces": [
+      "tire_tool_part_28_00.stl"
+    ],
+    "volume_m3": 3.3099396347522244e-07,
+    "center_m": [
+      -0.02112018877432764,
+      -0.10718682475783127,
+      0.026688461748695748
+    ],
+    "unit_inertia_m2": [
+      [
+        3.363925803163146e-05,
+        -2.263042491267267e-14,
+        9.894875582727832e-14
+      ],
+      [
+        -2.263042491267267e-14,
+        2.8214497350521674e-06,
+        -1.751124561260735e-13
+      ],
+      [
+        9.894875582727832e-14,
+        -1.751124561260735e-13,
+        3.3639258261464414e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_31": {
+    "source": "assets/tire_tool/part_31.stl",
+    "source_sha256": "a3025200db4c33d357d55989d4368a7c4586e5dfbafa8640c4322f0bf6d4a852",
+    "pieces": [
+      "tire_tool_part_31_00.stl"
+    ],
+    "volume_m3": 3.309939600610662e-07,
+    "center_m": [
+      0.04685673821190457,
+      -0.10718682465804764,
+      0.02491718358072193
+    ],
+    "unit_inertia_m2": [
+      [
+        3.363925803962289e-05,
+        -1.0484830538329596e-13,
+        -1.3264479888362593e-13
+      ],
+      [
+        -1.0484830538329596e-13,
+        2.821449674406946e-06,
+        1.0508884189926e-13
+      ],
+      [
+        -1.3264479888362593e-13,
+        1.0508884189926e-13,
+        3.3639257916858045e-05
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_32": {
+    "source": "assets/tire_tool/part_32.stl",
+    "source_sha256": "3066e59a0189be35ca2d139f80d32c3dac4c76093261d8b00a4853809543cf17",
+    "pieces": [
+      "tire_tool_part_32_00.stl"
+    ],
+    "volume_m3": 1.2685006921134238e-07,
+    "center_m": [
+      0.01744452195821227,
+      -0.09782483646521063,
+      0.017087844307046077
+    ],
+    "unit_inertia_m2": [
+      [
+        4.8680853816597525e-06,
+        -3.4312258923064594e-10,
+        7.715148407875228e-14
+      ],
+      [
+        -3.4312258923064594e-10,
+        3.2179206469952225e-06,
+        2.1367929386490897e-10
+      ],
+      [
+        7.715148407875228e-14,
+        2.1367929386490897e-10,
+        4.868085530883119e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_33": {
+    "source": "assets/tire_tool/part_33.stl",
+    "source_sha256": "794a7e7961b4338219113c1794da1d50e28ef8f9f5b56b53508a770c7d0113eb",
+    "pieces": [
+      "tire_tool_part_33_00.stl"
+    ],
+    "volume_m3": 5.007663836123988e-08,
+    "center_m": [
+      -0.021839123293726215,
+      -0.09695687490703954,
+      -0.0009021728707864287
+    ],
+    "unit_inertia_m2": [
+      [
+        2.962224739551751e-06,
+        3.929547177041187e-15,
+        -7.816458170359074e-12
+      ],
+      [
+        3.929547177041187e-15,
+        5.002712958593227e-06,
+        5.147771326508143e-16
+      ],
+      [
+        -7.816458170359074e-12,
+        5.147771326508143e-16,
+        2.9622360814849405e-06
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_35": {
+    "source": "assets/tire_tool/part_35.stl",
+    "source_sha256": "8e599ef1c1d3d0a8cd7cbed83312e0ca38ecb4b20312077b82c53f96493dd2de",
+    "pieces": [
+      "tire_tool_part_35_00.stl"
+    ],
+    "volume_m3": 1.2685006657550172e-07,
+    "center_m": [
+      0.007548386148047603,
+      -0.09782274647721566,
+      0.017345708182080515
+    ],
+    "unit_inertia_m2": [
+      [
+        4.86808516723247e-06,
+        -3.4302987971661706e-10,
+        5.713826250613073e-14
+      ],
+      [
+        -3.4302987971661706e-10,
+        3.2179207374749063e-06,
+        2.135878522239283e-10
+      ],
+      [
+        5.713826250613073e-14,
+        2.135878522239283e-10,
+        4.868085172594306e-06
+      ]
+    ],
+    "inertia_source": "convex hull fallback",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  },
+  "tire_tool_part_38": {
+    "source": "assets/tire_tool/part_38.stl",
+    "source_sha256": "a2732a42e66874c2cddfa0d8c25853d01b49b064d679f84f19986d99606e8e53",
+    "pieces": [
+      "tire_tool_part_38_00.stl"
+    ],
+    "volume_m3": 2.9977344661792813e-06,
+    "center_m": [
+      0.012676404814309596,
+      -0.08946517589650857,
+      0.025407619076439465
+    ],
+    "unit_inertia_m2": [
+      [
+        0.00019713911094628448,
+        3.848436321311596e-07,
+        -2.7881661471679314e-06
+      ],
+      [
+        3.848436321311596e-07,
+        0.00025994072372334683,
+        8.152650241120455e-06
+      ],
+      [
+        -2.7881661471679314e-06,
+        8.152650241120455e-06,
+        7.414131711575943e-05
+      ]
+    ],
+    "inertia_source": "closed CAD volume",
+    "collision_method": "convex hull",
+    "decomposition_settings": {
+      "threshold": 0.015,
+      "max_convex_hull": 40,
+      "resolution": 1500,
+      "mcts_iterations": 40,
+      "mcts_nodes": 12,
+      "seed": 17,
+      "decimate": true,
+      "max_ch_vertex": 64
+    }
+  }
+}

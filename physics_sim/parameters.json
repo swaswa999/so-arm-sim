@@ -1,0 +1,43 @@
+{
+  "timestep": 0.001,
+  "control_period": 0.01,
+  "servo_profile": "7.4v",
+  "gravity": [0, 0, -9.81],
+  "friction": [0.6, 0.003, 0.0001],
+  "contact_time_constant": 0.006,
+  "joint_damping": 0.08,
+  "joint_friction": 0.025,
+  "reflected_motor_inertia": 0.0001,
+  "body_mass_kg": {
+    "custom_gripper": 0.09,
+    "locking_jaw": 0.012,
+    "custom_rear_cad": 0.015,
+    "socket_tool": 0.16,
+    "powered_drive": 0.025,
+    "tire_tool": 0.22,
+    "tire_jaw_15": 0.012,
+    "tire_jaw_25": 0.012,
+    "wheel": 0.018,
+    "nut": 0.002
+  },
+  "jaw_force_limit_n": 8.0,
+  "locking_torque_limit_nm": 0.5,
+  "drive_torque_limit_nm": 0.15,
+  "latch_position_tolerance_m": 0.002,
+  "latch_angle_tolerance_rad": 0.06,
+  "latch_force_limit_n": 35.0,
+  "latch_torque_limit_nm": 0.8,
+  "thread_pitch_m": 0.001,
+  "thread_engagement_m": 0.008,
+  "thread_breakaway_nm": 0.025,
+  "thread_running_nm": 0.008,
+  "provenance": {
+    "servo_ratings": "Manufacturer endpoints: https://docs.waveshare.com/ST3215_Servo; 7.4 V and 12 V models are separate profiles.",
+    "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
+    "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
+    "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
+    "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
+    "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
+    "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement."
+  }
+}
