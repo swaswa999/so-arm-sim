@@ -1,0 +1,160 @@
+{
+  "scenario": "cycle",
+  "status": "failed",
+  "failure": "arm cannot track within torque/contact limits",
+  "failure_stage": "Slide gripper into socket tool",
+  "mujoco_version": "3.16.0",
+  "model_parameters": {
+    "timestep": 0.001,
+    "control_period": 0.01,
+    "servo_profile": "7.4v",
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "friction": [
+      0.6,
+      0.003,
+      0.0001
+    ],
+    "contact_time_constant": 0.006,
+    "joint_damping": 0.08,
+    "joint_friction": 0.025,
+    "reflected_motor_inertia": 0.002,
+    "body_mass_kg": {
+      "custom_gripper": 0.09,
+      "locking_jaw": 0.012,
+      "custom_rear_cad": 0.015,
+      "socket_tool": 0.16,
+      "powered_drive": 0.025,
+      "tire_tool": 0.22,
+      "tire_jaw_15": 0.012,
+      "tire_jaw_25": 0.012,
+      "wheel": 0.018,
+      "nut": 0.002
+    },
+    "jaw_force_limit_n": 8.0,
+    "locking_torque_limit_nm": 0.5,
+    "drive_torque_limit_nm": 0.15,
+    "latch_position_tolerance_m": 0.002,
+    "latch_angle_tolerance_rad": 0.06,
+    "latch_force_limit_n": 35.0,
+    "latch_torque_limit_nm": 0.8,
+    "thread_pitch_m": 0.001,
+    "thread_engagement_m": 0.008,
+    "thread_breakaway_nm": 0.025,
+    "thread_running_nm": 0.008,
+    "provenance": {
+      "servo_ratings": "Manufacturer endpoints: https://docs.waveshare.com/ST3215_Servo; 7.4 V and 12 V models are separate profiles.",
+      "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
+      "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
+      "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
+      "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
+      "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
+      "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement.",
+      "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change."
+    },
+    "release_station_offset_m": [
+      0.15,
+      0,
+      0
+    ],
+    "latch_linear_speed_limit_m_s": 0.03,
+    "latch_angular_speed_limit_rad_s": 0.3,
+    "servo_controller": {
+      "kp": 55.0,
+      "kd": 1.2,
+      "ki": 8.0,
+      "command_speed": 2.0,
+      "command_acceleration": 5.0,
+      "latency": 0.02,
+      "encoder_steps": 4096,
+      "thermal_time_constant": 20.0
+    },
+    "drive_no_load_speed_rad_s": 6.0,
+    "jaw_no_load_speed_m_s": 0.02
+  },
+  "contact_sampling_period_s": 0.01,
+  "final_state_checks": {
+    "tool_released": true,
+    "nut_thread_engaged": true,
+    "nut_seated": true,
+    "wheel_seated": true,
+    "jaw_open": true,
+    "socket_tool_parked": true,
+    "tire_tool_parked": true
+  },
+  "simulation_seconds": 6.861000000000626,
+  "reference_seconds": 2.6099999999999883,
+  "stage": "arm cannot track within torque/contact limits",
+  "servo_profile": "7.4v",
+  "physics_timestep_s": 0.001,
+  "peak_joint_torque_nm": {
+    "shoulder_pan": 0.0682017647352534,
+    "shoulder_lift": 1.785652909878198,
+    "elbow_flex": 1.8619122407907185,
+    "wrist_flex": 1.7914834969360356,
+    "wrist_roll": 0.07269518508849589
+  },
+  "saturation_fraction": {
+    "shoulder_pan": 0.0,
+    "shoulder_lift": 0.48229121119370355,
+    "elbow_flex": 0.5461303017052908,
+    "wrist_flex": 0.514648010494097,
+    "wrist_roll": 0.0
+  },
+  "maximum_joint_tracking_error_rad": 0.16276687009669966,
+  "sampled_maximum_contact_force_n": 16.87376257287183,
+  "sampled_maximum_penetration_m": 0.00012912926158518194,
+  "contact_pairs": {
+    "socket_tool / world": {
+      "peak_force_n": 16.87376257287183,
+      "peak_penetration_m": 0.00012912926158518194
+    },
+    "tire_tool / world": {
+      "peak_force_n": 0.5284426382537558,
+      "peak_penetration_m": 0.00011175406299755199
+    },
+    "wheel / wheel_fixture": {
+      "peak_force_n": 0.17444333483094923,
+      "peak_penetration_m": 0.0
+    },
+    "nut / wheel": {
+      "peak_force_n": 0.011290156444078636,
+      "peak_penetration_m": 0.0
+    },
+    "custom_gripper / world": {
+      "peak_force_n": 5.064904708963422,
+      "peak_penetration_m": 0.0
+    },
+    "custom_gripper / socket_tool": {
+      "peak_force_n": 7.455161540057714,
+      "peak_penetration_m": 5.497438003948857e-05
+    }
+  },
+  "final_joint_error_rad": {
+    "shoulder_pan": 0.0005772552616893911,
+    "shoulder_lift": 0.02636705886665691,
+    "elbow_flex": -0.16107006861922007,
+    "wrist_flex": 0.1335795455462927,
+    "wrist_roll": 1.3516215195297221e-05
+  },
+  "peak_latch_force_n": 0.0,
+  "peak_latch_torque_nm": 0.0,
+  "latch_events": [],
+  "thread_events": [],
+  "attached_tool": null,
+  "nut_thread_engaged": true,
+  "unmeasured_parameters": {
+    "servo_ratings": "Manufacturer endpoints: https://docs.waveshare.com/ST3215_Servo; 7.4 V and 12 V models are separate profiles.",
+    "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
+    "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
+    "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
+    "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
+    "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
+    "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement.",
+    "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change."
+  },
+  "wall_seconds": 28.491639999992913
+}
