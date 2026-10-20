@@ -1,7 +1,7 @@
 {
   "timestep": 0.001,
   "control_period": 0.01,
-  "servo_profile": "7.4v",
+  "servo_profile": "hiwonder-hx30hm",
   "gravity": [
     0,
     0,
@@ -40,14 +40,15 @@
   "thread_breakaway_nm": 0.025,
   "thread_running_nm": 0.008,
   "provenance": {
-    "servo_ratings": "Manufacturer endpoints: https://docs.waveshare.com/ST3215_Servo; 7.4 V and 12 V models are separate profiles.",
+    "servo_ratings": "Default inferred from user-reported HiWonder SO-ARM101 kit; installed motor label and actual supply not verified. HX-30HM follower: 30 kgf cm, 0.19 s/60 degrees at 11.1 V, 1/345 gearing, 4096 encoder counts. Kit lists a 12 V supply; endpoints are not extrapolated. Sources: https://docs.hiwonder.com/projects/LeRobot/en/latest/docs/SO_ARM101_Open_Source_6_Axis_Robotic_Arm_User_Manual.html and https://www.hiwonder.com/products/hx-30hm . Feetech alternatives: https://docs.waveshare.com/ST3215_Servo .",
     "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
     "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
     "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
     "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
     "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
     "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement.",
-    "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change."
+    "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change.",
+    "continuous_torque": "HX-30HM continuous torque is an unmeasured one-third-stall modeling allowance (0.980665 N m), not a manufacturer rating. Gains, thermal time constant, and derating require identification."
   },
   "release_station_offset_m": [
     0.15,

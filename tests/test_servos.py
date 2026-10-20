@@ -17,8 +17,9 @@ def test_commands_are_delayed_and_acceleration_limited():
         previous_velocity = bank.velocity[0]
 
 
-def test_stall_and_speed_limits_cannot_be_overridden_by_large_error():
-    bank = ServoBank(PROFILES['7.4v'], [2., -2.])
+@pytest.mark.parametrize('profile', list(PROFILES))
+def test_stall_and_speed_limits_cannot_be_overridden_by_large_error(profile):
+    bank = ServoBank(PROFILES[profile], [2., -2.])
     torque = bank.update([2., -2.], [0., 0.], [0., 0.])
     assert np.all(np.abs(torque) <= bank.spec.stall_torque)
     torque = bank.update([2., -2.], [0., 0.], [bank.spec.no_load_speed, -bank.spec.no_load_speed])

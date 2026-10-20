@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 import mujoco
 import numpy as np
 from scipy.spatial.transform import Rotation
+from .servos import PROFILES
 
 ROOT = Path(__file__).resolve().parents[1]
 ARM_JOINTS = ('shoulder_pan', 'shoulder_lift', 'elbow_flex', 'wrist_flex', 'wrist_roll')
@@ -36,7 +37,7 @@ def parameters(path=None):
                 'thread_breakaway_nm','thread_running_nm')
     if any(not math.isfinite(params[k]) or params[k] <= 0 for k in positive):
         raise ValueError('Contact and mechanism parameters must be finite and positive')
-    if params['servo_profile'] not in ('7.4v','12v'):
+    if params['servo_profile'] not in PROFILES:
         raise ValueError('Unknown servo profile')
     if len(params['friction']) != 3 or any(not math.isfinite(v) or v < 0 for v in params['friction']):
         raise ValueError('Friction must contain three finite nonnegative values')

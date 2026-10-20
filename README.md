@@ -43,9 +43,13 @@ python run_physics.py --headless --scenario drop --seconds 2
 python run_physics.py --headless --scenario cycle --seconds 180 --csv outputs/cycle.csv
 ```
 
-The default servo profile assumes the **7.4 V model**. Use `--servo-profile 12v`
-for the other published rating. Custom masses, friction, servo control and latch
-strength are editable estimates in `physics_sim/parameters.json`.
+The default servo profile is **HiWonder HX-30HM**, inferred from the user's
+HiWonder SO-ARM101 kit; the installed motor label remains unconfirmed. It uses
+HiWonder's published 11.1 V torque/speed ratings, with no extrapolation to the
+kit's 12 V supply. Continuous torque, custom masses, friction, servo control and
+latch strength remain estimates. Configuration lives in
+`physics_sim/parameters.json`. The earlier Feetech profiles remain available
+with `--servo-profile 7.4v` or `--servo-profile 12v`.
 
 See [physics assumptions and calibration](docs/physics.md) for the model's scope,
 source specifications, diagnostic outputs, and tests. Collision geometry is

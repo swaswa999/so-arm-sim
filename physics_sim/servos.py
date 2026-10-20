@@ -39,6 +39,10 @@ class ServoSpec:
 PROFILES = {
     "7.4v": ServoSpec(19.5 * .0980665, 5 * .0980665, 52 * 2 * math.pi / 60),
     "12v": ServoSpec(30 * .0980665, 10 * .0980665, 45 * 2 * math.pi / 60),
+    # Hiwonder SO-ARM101 manual: HX-30HM, 30 kgf cm and .19 s/60 deg
+    # at 11.1 V. Use those endpoints without extrapolating to the kit's 12 V
+    # supply. Continuous allowance is an UNMEASURED one-third-stall estimate.
+    "hiwonder-hx30hm": ServoSpec(30 * .0980665, 10 * .0980665, (math.pi / 3) / .19),
 }
 
 

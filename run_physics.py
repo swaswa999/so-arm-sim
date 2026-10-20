@@ -8,6 +8,7 @@ import mujoco
 import numpy as np
 from physics_sim.model import ARM_JOINTS, parameters
 from physics_sim.simulation import Simulation
+from physics_sim.servos import PROFILES
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
     parser.add_argument('--headless',action='store_true')
     parser.add_argument('--seconds',type=float,default=10.)
     parser.add_argument('--params',type=Path)
-    parser.add_argument('--servo-profile',choices=('7.4v','12v'))
+    parser.add_argument('--servo-profile',choices=tuple(PROFILES))
     parser.add_argument('--report',type=Path,default=Path('outputs/physics-report.json'))
     parser.add_argument('--csv',type=Path)
     parser.add_argument('--preview',type=Path,help='Save a rendered frame at the end')

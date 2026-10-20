@@ -52,8 +52,9 @@ controls affect only the simulation. Rendering does not change the physics
 step size. If the simulation is slower than real time, the displayed simulation
 clock is the authoritative clock.
 
-`--preview outputs/physics.png` saves the final frame. `--servo-profile 12v`
-selects the alternative servo ratings. `--params path/to/parameters.json` loads
+`--preview outputs/physics.png` saves the final frame. The default profile is
+`hiwonder-hx30hm`; `--servo-profile 7.4v` and `--servo-profile 12v` select the
+earlier Feetech ratings. `--params path/to/parameters.json` loads
 a complete calibration file copied from `physics_sim/parameters.json`.
 
 The cycle runner uses the old trajectory as a *request* to the motors. It waits
@@ -74,16 +75,20 @@ spikes. CSV output records joint positions, velocities and actuator torques.
 | --- | --- |
 | Arm geometry and link inertia | Included SO-101 model and its upstream documentation |
 | Custom geometry | Included CAD, converted from millimetres to metres |
-| Servo stall torque and no-load speed | Published 7.4 V or 12 V ST3215 endpoints |
-| Sustained torque allowance | Published rated-load value used as a modeling assumption |
+| Default servo stall torque and speed | HiWonder HX-30HM: 30 kgf cm and 0.19 s/60 degrees, specified at 11.1 V |
+| Sustained torque allowance | HX-30HM: unmeasured one-third-stall estimate, not a manufacturer continuous rating; Feetech alternatives use published rated-load values as an assumption |
 | Custom mass, friction, contact compliance | Explicit estimates in the parameter file |
 | Servo gains, latency, damping, rotor inertia, derating | Identification estimates |
 | Tool latch strength and capture tolerance | Estimates, not a validated mechanical latch design |
 | Nut resistance, pitch engagement and thread recapture | Reduced model of the small printed demonstration fastener |
 
-The arm profile assumes a follower arm with the 1/345 servo gearing described
-in the LeRobot assembly guide. Leader-arm gearing is different. The custom
-locking jaw, socket drive, and tire jaws use separate estimated limits.
+The default assumes HiWonder's HX-30HM follower with 1/345 gearing, inferred
+from the user's kit brand. Its exact installed motor variant remains unconfirmed.
+HiWonder lists a 12 V supply for the kit, but specifies the motor endpoints at
+11.1 V; the simulation uses those published endpoints without voltage scaling.
+Encoder command resolution is 4,096 counts; this does not imply equivalent
+mechanical accuracy. Leader-arm motors differ. Custom locking, socket-drive,
+and tire-jaw mechanisms retain separate estimated limits.
 
 Measure the complete socket/tire tools and custom gripper on a scale first.
 Record servo model and supply voltage, then compare loaded static positions,
@@ -119,6 +124,8 @@ simulator does not need a CAD kernel or decomposition library.
 
 ## References
 
+- [HiWonder SO-ARM101 manual and motor ratings](https://docs.hiwonder.com/projects/LeRobot/en/latest/docs/SO_ARM101_Open_Source_6_Axis_Robotic_Arm_User_Manual.html)
+- [HiWonder HX-30HM specifications](https://www.hiwonder.com/products/hx-30hm)
 - [Waveshare ST3215 specifications](https://docs.waveshare.com/ST3215_Servo)
 - [LeRobot SO-101 assembly and follower gearing](https://huggingface.co/docs/lerobot/main/assemble_so101)
 - [MuJoCo contact, actuator, and equality-constraint reference](https://mujoco.readthedocs.io/en/latest/XMLreference.html)

@@ -1,0 +1,162 @@
+{
+  "scenario": "cycle",
+  "status": "failed",
+  "failure": "arm cannot track within torque/contact limits",
+  "failure_stage": "Slide gripper into socket tool",
+  "mujoco_version": "3.16.0",
+  "model_parameters": {
+    "timestep": 0.001,
+    "control_period": 0.01,
+    "servo_profile": "hiwonder-hx30hm",
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "friction": [
+      0.6,
+      0.003,
+      0.0001
+    ],
+    "contact_time_constant": 0.006,
+    "joint_damping": 0.08,
+    "joint_friction": 0.025,
+    "reflected_motor_inertia": 0.002,
+    "body_mass_kg": {
+      "custom_gripper": 0.09,
+      "locking_jaw": 0.012,
+      "custom_rear_cad": 0.015,
+      "socket_tool": 0.16,
+      "powered_drive": 0.025,
+      "tire_tool": 0.22,
+      "tire_jaw_15": 0.012,
+      "tire_jaw_25": 0.012,
+      "wheel": 0.018,
+      "nut": 0.002
+    },
+    "jaw_force_limit_n": 8.0,
+    "locking_torque_limit_nm": 0.5,
+    "drive_torque_limit_nm": 0.15,
+    "latch_position_tolerance_m": 0.002,
+    "latch_angle_tolerance_rad": 0.06,
+    "latch_force_limit_n": 35.0,
+    "latch_torque_limit_nm": 0.8,
+    "thread_pitch_m": 0.001,
+    "thread_engagement_m": 0.008,
+    "thread_breakaway_nm": 0.025,
+    "thread_running_nm": 0.008,
+    "provenance": {
+      "servo_ratings": "Default inferred from user-reported HiWonder SO-ARM101 kit; installed motor label and actual supply not verified. HX-30HM follower: 30 kgf cm, 0.19 s/60 degrees at 11.1 V, 1/345 gearing, 4096 encoder counts. Kit lists a 12 V supply; endpoints are not extrapolated. Sources: https://docs.hiwonder.com/projects/LeRobot/en/latest/docs/SO_ARM101_Open_Source_6_Axis_Robotic_Arm_User_Manual.html and https://www.hiwonder.com/products/hx-30hm . Feetech alternatives: https://docs.waveshare.com/ST3215_Servo .",
+      "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
+      "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
+      "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
+      "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
+      "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
+      "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement.",
+      "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change.",
+      "continuous_torque": "HX-30HM continuous torque is an unmeasured one-third-stall modeling allowance (0.980665 N m), not a manufacturer rating. Gains, thermal time constant, and derating require identification."
+    },
+    "release_station_offset_m": [
+      0.15,
+      0,
+      0
+    ],
+    "latch_linear_speed_limit_m_s": 0.03,
+    "latch_angular_speed_limit_rad_s": 0.3,
+    "servo_controller": {
+      "kp": 55.0,
+      "kd": 1.2,
+      "ki": 8.0,
+      "command_speed": 2.0,
+      "command_acceleration": 5.0,
+      "latency": 0.02,
+      "encoder_steps": 4096,
+      "thermal_time_constant": 20.0
+    },
+    "drive_no_load_speed_rad_s": 6.0,
+    "jaw_no_load_speed_m_s": 0.02
+  },
+  "contact_sampling_period_s": 0.01,
+  "final_state_checks": {
+    "tool_released": true,
+    "nut_thread_engaged": true,
+    "nut_seated": true,
+    "wheel_seated": true,
+    "jaw_open": true,
+    "socket_tool_parked": true,
+    "tire_tool_parked": true
+  },
+  "simulation_seconds": 6.561000000000526,
+  "reference_seconds": 2.5599999999999894,
+  "stage": "arm cannot track within torque/contact limits",
+  "servo_profile": "hiwonder-hx30hm",
+  "physics_timestep_s": 0.001,
+  "peak_joint_torque_nm": {
+    "shoulder_pan": 0.06645948380643363,
+    "shoulder_lift": 2.878135335024939,
+    "elbow_flex": 2.8931442098376077,
+    "wrist_flex": 2.7909170022766774,
+    "wrist_roll": 0.07269518508849589
+  },
+  "saturation_fraction": {
+    "shoulder_pan": 0.0,
+    "shoulder_lift": 0.46822130772748055,
+    "elbow_flex": 0.5136412132296906,
+    "wrist_flex": 0.0172229843011736,
+    "wrist_roll": 0.0
+  },
+  "maximum_joint_tracking_error_rad": 0.17115493872872817,
+  "sampled_maximum_contact_force_n": 20.19505560897167,
+  "sampled_maximum_penetration_m": 0.0001737256045958605,
+  "contact_pairs": {
+    "socket_tool / world": {
+      "peak_force_n": 20.19505560897167,
+      "peak_penetration_m": 0.0001737256045958605
+    },
+    "tire_tool / world": {
+      "peak_force_n": 0.5284426382537558,
+      "peak_penetration_m": 0.00011175406299755199
+    },
+    "wheel / wheel_fixture": {
+      "peak_force_n": 0.17444333483094923,
+      "peak_penetration_m": 0.0
+    },
+    "nut / wheel": {
+      "peak_force_n": 0.011290156444078636,
+      "peak_penetration_m": 0.0
+    },
+    "custom_gripper / world": {
+      "peak_force_n": 5.515056129203315,
+      "peak_penetration_m": 0.0
+    },
+    "custom_gripper / socket_tool": {
+      "peak_force_n": 8.533898163459689,
+      "peak_penetration_m": 8.61253333798113e-05
+    }
+  },
+  "final_joint_error_rad": {
+    "shoulder_pan": 0.00134177530826185,
+    "shoulder_lift": 0.09198852624163179,
+    "elbow_flex": -0.17115643532855984,
+    "wrist_flex": 0.01600669230119811,
+    "wrist_roll": -0.0006297983515100025
+  },
+  "peak_latch_force_n": 0.0,
+  "peak_latch_torque_nm": 0.0,
+  "latch_events": [],
+  "thread_events": [],
+  "attached_tool": null,
+  "nut_thread_engaged": true,
+  "unmeasured_parameters": {
+    "servo_ratings": "Default inferred from user-reported HiWonder SO-ARM101 kit; installed motor label and actual supply not verified. HX-30HM follower: 30 kgf cm, 0.19 s/60 degrees at 11.1 V, 1/345 gearing, 4096 encoder counts. Kit lists a 12 V supply; endpoints are not extrapolated. Sources: https://docs.hiwonder.com/projects/LeRobot/en/latest/docs/SO_ARM101_Open_Source_6_Axis_Robotic_Arm_User_Manual.html and https://www.hiwonder.com/products/hx-30hm . Feetech alternatives: https://docs.waveshare.com/ST3215_Servo .",
+    "arm_inertias": "Existing upstream SO101 MJCF link mass and inertia values are retained through the wrist; obsolete stock gripper inertia is replaced.",
+    "body_mass_kg": "Unmeasured estimates for the small printed assemblies. CAD-derived centers and normalized tensors are scaled to these masses.",
+    "contacts": "Estimated rigid-body Coulomb friction and soft-contact compliance; printed-part flexure is not modeled.",
+    "servo_control": "Estimated PID, communication delay, acceleration and I2t derating; not identified from hardware.",
+    "thread": "Reduced helical force model for the existing 1 mm pitch plastic demonstration fastener, not an automotive lug nut.",
+    "latch": "Breakable soft constraint for mechanical tool capture, enabled only after measured alignment, contact and jaw closure. Strength estimates need measurement.",
+    "layout": "The separate wheel-release/nut-strip station is moved 0.15 m right in physics mode to clear the tire tool. Original CAD placements overlap. This is a proposed bench layout, not a measured hardware change.",
+    "continuous_torque": "HX-30HM continuous torque is an unmeasured one-third-stall modeling allowance (0.980665 N m), not a manufacturer rating. Gains, thermal time constant, and derating require identification."
+  },
+  "wall_seconds": 26.842777750018286
+}

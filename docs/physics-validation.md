@@ -1,5 +1,27 @@
 # Physics validation — 2026-10-20
 
+## HiWonder profile update
+
+The default is now `hiwonder-hx30hm`, inferred from the user's report that their
+SO-ARM101 is the HiWonder kit. Its installed motor label and actual supply have
+not been checked. The profile uses HiWonder's 11.1 V HX-30HM endpoints without
+extrapolating to the listed 12 V kit supply. Sustained torque remains an estimated
+one-third of stall torque, not a published continuous rating.
+
+**19 tests passed**, including motor-envelope checks for all three profiles.
+The [3 s hold](validation/hiwonder-hold.json) remained stable, with maximum joint
+tracking error 0.009199 rad (0.527 degrees).
+The [cycle attempt](validation/hiwonder-cycle.json) stopped at
+6.561 s, reference time 2.56 s, during
+**Slide gripper into socket tool** because the arm could not track within the
+modeled torque/contact limits. Full-cycle physics success is still unvalidated.
+Use the default commands in the README to reproduce these HiWonder runs.
+
+## Original 7.4 V baseline
+
+The remaining sections preserve the original profile's measurements. They are
+not HiWonder-profile results.
+
 Tested simulation code: `0f2e97a11dc99c642b16d85104f824663b04952b`.
 Python 3.12.4, MuJoCo 3.16.0; default 7.4 V follower profile and estimated custom
 masses/friction. Collision geometry contains 1,301 convex pieces from 59 source
@@ -59,16 +81,16 @@ Impact and contact-force convergence are not established by this check.
 
 ```sh
 python -m pytest -q
-python run_physics.py --headless --scenario hold --seconds 3 \
+python run_physics.py --headless --scenario hold --seconds 3 --servo-profile 7.4v \
   --report outputs/hold.json --csv outputs/hold.csv
-python run_physics.py --headless --scenario drop --seconds 2 \
+python run_physics.py --headless --scenario drop --seconds 2 --servo-profile 7.4v \
   --report outputs/drop.json
-python run_physics.py --headless --scenario cycle --seconds 180 \
+python run_physics.py --headless --scenario cycle --seconds 180 --servo-profile 7.4v \
   --report outputs/cycle.json --csv outputs/cycle.csv
 ```
 
-For the sensitivity run, copy `physics_sim/parameters.json`, change `timestep`
-to `0.0005`, and pass its path with `--params`. Keep all other values unchanged.
+For the sensitivity run, copy `physics_sim/parameters.json`, set `servo_profile`
+to `7.4v` and `timestep` to `0.0005`, and pass its path with `--params`. Keep all other values unchanged.
 Exit code 2 from the cycle run is the recorded physical gate failure.
 
 ## Next validation work
