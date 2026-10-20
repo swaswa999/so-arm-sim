@@ -112,6 +112,8 @@ def build_model(params=None):
         body.set('quat', numbers(np.r_[q[3], q[:3]]))
         ET.SubElement(body, 'freejoint', name=placement['folder']+'_free')
     fixture = bodies['wheel_fixture']
+    station = fixture.find("geom[@name='wheel_part_2']")
+    station.set('pos', numbers(np.fromstring(station.get('pos', '0 0 0'), sep=' ')+params['release_station_offset_m']))
     for name in ('wheel', 'nut'):
         body = bodies[name]
         fixture.remove(body)
@@ -156,6 +158,10 @@ def build_model(params=None):
                                     condim='4', friction=numbers(params['friction']),
                                     solref=f'{params["contact_time_constant"]} 1',
                                     solimp='.9 .95 .001', margin='.0001', gap='0')
+            if geom.get('mesh') == 'wheel_mesh_3':
+                collision.attrib.update(contype='4', conaffinity='1')
+            elif geom.get('mesh') == 'wheel_mesh_5':
+                collision.attrib.update(contype='2', conaffinity='5')
             parent.append(collision)
     actuator = ET.SubElement(root, 'actuator')
     for name in (*ARM_JOINTS, 'locking_servo', 'drive_turn', 'tire_jaw_slide_15', 'tire_jaw_slide_25'):

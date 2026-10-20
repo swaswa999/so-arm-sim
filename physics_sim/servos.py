@@ -42,7 +42,10 @@ PROFILES = {
 
 
 class ServoBank:
-    """100 Hz delayed commands, encoder feedback, slew limits and bounded effort.
+    """Delayed commands, encoder feedback, slew limits and bounded effort.
+
+    The caller holds bus commands between updates while running this feedback
+    loop at the physics rate. Latency is represented in feedback-loop ticks.
 
     This produces motor torques only. It never changes simulation positions or
     velocities. The continuous-load derating is an estimated I²t approximation,

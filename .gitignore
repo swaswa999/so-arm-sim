@@ -17,3 +17,6 @@ __pycache__/
 .DS_Store
 ._*
 *.log
+
+# Physics diagnostics and local renders (reference evidence lives in docs/)
+outputs/
