@@ -2,3 +2,4 @@
 pytest==9.1.1
 trimesh==5.1.1
 coacd==1.0.14
+shapely==2.2.0

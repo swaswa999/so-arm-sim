@@ -178,6 +178,8 @@ class Simulation:
 
     def report(self):
         return dict(scenario=self.scenario,status=self.status,failure=self.failure,failure_stage=self.failure_stage,
+                    mujoco_version=mujoco.__version__,model_parameters=self.params,
+                    contact_sampling_period_s=10*self.model.opt.timestep,
                     final_state_checks=self.final_state_checks(),
                     simulation_seconds=float(self.data.time),reference_seconds=self.reference_time,
                     stage=self.state['label'],servo_profile=self.params['servo_profile'],
