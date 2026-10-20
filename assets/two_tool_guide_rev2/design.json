@@ -1,0 +1,128 @@
+{
+  "units": "mm",
+  "height": 18.0,
+  "throat_height": 3.0,
+  "flare": 10.0,
+  "clearance_per_side": 0.6,
+  "bay_spacing": 95,
+  "size": [
+    198.62908935546875,
+    102.92459106445312,
+    18.0
+  ],
+  "housing_level_correction_deg": 1.492621207548909,
+  "bays": [
+    {
+      "tool": "socket_tool",
+      "opening_width": 45.10743262728069,
+      "opening_depth": 48.78283996582032,
+      "flare": 10.0
+    },
+    {
+      "tool": "tire_tool",
+      "opening_width": 53.66690928059114,
+      "opening_depth": 53.78283996582032,
+      "flare": 15.0
+    }
+  ],
+  "placements": [
+    {
+      "folder": "socket_tool",
+      "rotation": [
+        [
+          0.9761531953989477,
+          0.215587489657882,
+          -0.025435672105072707
+        ],
+        [
+          0.21551433820619637,
+          -0.9764845284504066,
+          -0.005615667772633085
+        ],
+        [
+          -0.02604820799919572,
+          1.2246467991473535e-16,
+          -0.9996606878636527
+        ]
+      ],
+      "translation_mm": [
+        -88.08591811911562,
+        -144.29215916723064,
+        50.92926376458048
+      ],
+      "tool_part_indices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        18,
+        21
+      ]
+    },
+    {
+      "folder": "tire_tool",
+      "rotation": [
+        [
+          0.9761531953989477,
+          0.215587489657882,
+          -0.025435672105072707
+        ],
+        [
+          0.21551433820619637,
+          -0.9764845284504066,
+          -0.005615667772633085
+        ],
+        [
+          -0.02604820799919572,
+          1.2246467991473535e-16,
+          -0.9996606878636527
+        ]
+      ],
+      "translation_mm": [
+        -182.51466403094526,
+        -146.7262425509647,
+        50.9292649989875
+      ],
+      "tool_part_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        31,
+        32,
+        33,
+        35,
+        38
+      ]
+    }
+  ],
+  "status": "CAD prototype, not physical drop-in or friction validation",
+  "limitations": [
+    "second bay reach and full robot path not validated",
+    "jaw motion envelope not supplied; checked supplied jaw pose only",
+    "one-sided open entry needs robot to seat tool against closed stop"
+  ]
+}

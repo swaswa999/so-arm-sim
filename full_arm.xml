@@ -1,0 +1,271 @@
+<mujoco model="Mayter — engage tool and unscrew nut">
+  <compiler angle="radian" autolimits="true" />
+  <option gravity="0 0 0" timestep=".005" />
+  <visual>
+    <global offwidth="1200" offheight="900" azimuth="-90" elevation="-25" />
+    <headlight ambient=".4 .4 .4" diffuse=".6 .6 .6" />
+  </visual>
+  <asset>
+    <mesh name="wheel_mesh_0" file="assets/wheel_rev2/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_1" file="assets/wheel_rev2/part_01.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_2" file="assets/wheel_rev2/part_02.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_3" file="assets/wheel_rev2/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_4" file="assets/wheel_rev2/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_5" file="assets/wheel_rev2/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_6" file="assets/wheel_rev2/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_0" file="assets/socket_tool/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_1" file="assets/socket_tool/part_01.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_2" file="assets/socket_tool/part_02.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_3" file="assets/socket_tool/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_4" file="assets/socket_tool/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_5" file="assets/socket_tool/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_6" file="assets/socket_tool/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_7" file="assets/socket_tool/part_07.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_8" file="assets/socket_tool/part_08.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_9" file="assets/socket_tool/part_09.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_10" file="assets/socket_tool/part_10.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_11" file="assets/socket_tool/part_11.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_12" file="assets/socket_tool/part_12.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_13" file="assets/socket_tool/part_13.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_14" file="assets/socket_tool/part_14.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_15" file="assets/socket_tool/part_15.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_16" file="assets/socket_tool/part_16.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_17" file="assets/socket_tool/part_17.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_18" file="assets/socket_tool/part_18.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_19" file="assets/socket_tool/part_19.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_20" file="assets/socket_tool/part_20.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_21" file="assets/socket_tool/part_21.stl" scale=".001 .001 .001" />
+    <mesh name="adapter_mesh" file="assets/generated_socket/socket_adapter.stl" scale=".001 .001 .001" />
+    <mesh file="assets/robotstudio_so101/assets/waveshare_mounting_plate_so101_v2.stl" />
+    <mesh file="assets/robotstudio_so101/assets/sts3215_03a_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/motor_holder_so101_base_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/wrist_roll_follower_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/moving_jaw_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/base_motor_holder_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/upper_arm_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/wrist_roll_pitch_so101_v2.stl" />
+    <mesh file="assets/robotstudio_so101/assets/under_arm_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/rotation_pitch_so101_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/motor_holder_so101_wrist_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/sts3215_03a_no_horn_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/base_so101_v2.stl" />
+    <mesh file="assets/robotstudio_so101/assets/moving_jaw_so101_gripper_v1.stl" />
+    <mesh file="assets/robotstudio_so101/assets/wrist_roll_follower_so101_camera_mount.stl" />
+    <mesh maxhullvert="64" file="assets/robotstudio_so101/assets/wrist_roll_follower_so101_gripper_part0_v1.stl" />
+    <mesh maxhullvert="64" file="assets/robotstudio_so101/assets/moving_jaw_so101_gripper_part0_v1.stl" />
+    <mesh maxhullvert="64" file="assets/robotstudio_so101/assets/moving_jaw_so101_gripper_part1_v1.stl" />
+    <material name="base_motor_holder_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="base_so101_v2_material" rgba="1 0.82 0.12 1" />
+    <material name="sts3215_03a_v1_material" rgba="0.1 0.1 0.1 1" />
+    <material name="waveshare_mounting_plate_so101_v2_material" rgba="1 0.82 0.12 1" />
+    <material name="motor_holder_so101_base_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="rotation_pitch_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="upper_arm_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="under_arm_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="motor_holder_so101_wrist_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="sts3215_03a_no_horn_v1_material" rgba="0.1 0.1 0.1 1.0" />
+    <material name="wrist_roll_pitch_so101_v2_material" rgba="1 0.82 0.12 1" />
+    <material name="wrist_roll_follower_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <material name="moving_jaw_so101_v1_material" rgba="1 0.82 0.12 1" />
+    <mesh name="docking_guide_mesh" file="assets/sim_two_tool_dock/Mayter_Socket_and_Tire_Funnel_Dock_Rev2.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_0" file="assets/tire_tool/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_3" file="assets/tire_tool/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_4" file="assets/tire_tool/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_5" file="assets/tire_tool/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_6" file="assets/tire_tool/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_7" file="assets/tire_tool/part_07.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_8" file="assets/tire_tool/part_08.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_9" file="assets/tire_tool/part_09.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_10" file="assets/tire_tool/part_10.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_12" file="assets/tire_tool/part_12.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_14" file="assets/tire_tool/part_14.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_15" file="assets/tire_tool/part_15.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_16" file="assets/tire_tool/part_16.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_17" file="assets/tire_tool/part_17.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_18" file="assets/tire_tool/part_18.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_19" file="assets/tire_tool/part_19.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_21" file="assets/tire_tool/part_21.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_22" file="assets/tire_tool/part_22.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_23" file="assets/tire_tool/part_23.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_24" file="assets/tire_tool/part_24.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_25" file="assets/tire_tool/part_25.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_27" file="assets/tire_tool/part_27.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_28" file="assets/tire_tool/part_28.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_31" file="assets/tire_tool/part_31.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_32" file="assets/tire_tool/part_32.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_33" file="assets/tire_tool/part_33.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_35" file="assets/tire_tool/part_35.stl" scale=".001 .001 .001" />
+    <mesh name="tire_tool_part_38" file="assets/tire_tool/part_38.stl" scale=".001 .001 .001" />
+  </asset>
+  <worldbody>
+    <light pos="0 -.2 .6" dir="0 0 -1" />
+    <geom name="table" type="plane" size=".45 .35 .01" rgba=".13 .17 .22 1" contype="0" conaffinity="0" />
+    <body name="wheel_fixture" pos="0 0 0.002">
+      <geom name="wheel_part_0" type="mesh" mesh="wheel_mesh_0" pos="0 0 0" rgba="0.2156862754953051 0.4235294089935352 0.5294117662438378 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_1" type="mesh" mesh="wheel_mesh_1" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_2" type="mesh" mesh="wheel_mesh_2" pos="0 0 0" rgba="0.2156862754953051 0.4235294089935352 0.5294117662438378 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_3" type="mesh" mesh="wheel_mesh_3" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_4" type="mesh" mesh="wheel_mesh_4" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <body name="nut" pos="0 -.02165 .052">
+        <inertial pos="0 0 0" mass=".002" diaginertia="1e-7 1e-7 1e-7" />
+        <joint name="nut_out" type="slide" axis="0 -1 0" range="0 .035" />
+        <joint name="nut_drop" type="slide" axis="0 0 -1" range="0 .035" />
+        <joint name="nut_turn" type="hinge" axis="0 -1 0" limited="false" />
+        <geom name="wheel_part_5" type="mesh" mesh="wheel_mesh_5" pos="0 .02165 -.052" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      </body>
+      <body name="wheel" pos="0 -.013 .052">
+        <inertial pos="0 0 0" mass=".01" diaginertia="1e-6 1e-6 1e-6" />
+        <joint name="wheel_out" type="slide" axis="0 -1 0" range="0 .07" />
+        <geom name="wheel_part_6" type="mesh" mesh="wheel_mesh_6" pos="0 .013 -.052" rgba="0.2705882322929475 0.30588235574643513 0.3450980390256854 1.0" contype="0" conaffinity="0" />
+      </body>
+    </body>
+    <body name="socket_tool" mocap="true" pos="-.12 -.195 .07" quat="0 0 0 1">
+      <body name="powered_drive" pos="0.012368 -0.097607 0.012269">
+        <joint name="drive_turn" type="hinge" axis="0 -1 0" limited="false" />
+        <inertial pos="0 0 0" mass=".02" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="engage_part_2" type="mesh" mesh="tool_mesh_2" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_7" type="mesh" mesh="tool_mesh_7" pos="-0.012368 0.097607 -0.012269" rgba="0.7294117703237839 0.2509803881039145 0.10588235106293152 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_13" type="mesh" mesh="tool_mesh_13" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_21" type="mesh" mesh="tool_mesh_21" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="new_socket_adapter" type="mesh" mesh="adapter_mesh" pos="-0.012368 0.097607 -0.012269" rgba=".30 .55 .8 1" contype="0" conaffinity="0" />
+      </body>
+      <geom name="engage_part_0" type="mesh" mesh="tool_mesh_0" pos="0.0 0.0 0.0" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_4" type="mesh" mesh="tool_mesh_4" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_5" type="mesh" mesh="tool_mesh_5" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_6" type="mesh" mesh="tool_mesh_6" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_8" type="mesh" mesh="tool_mesh_8" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_18" type="mesh" mesh="tool_mesh_18" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+    </body>
+    <body name="base" pos="-.0388353 -.40 .0025" quat="1 0 0 0" childclass="so101">
+      <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+      <geom type="mesh" class="visual" pos="-0.006365 -9.9e-05 -0.0024" quat="1 1 1 1" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" contype="0" conaffinity="0" />
+      <geom type="mesh" class="visual" pos="-0.006365 0 -0.0024" quat="1 1 1 1" mesh="base_so101_v2" material="base_so101_v2_material" contype="0" conaffinity="0" />
+      <geom type="mesh" class="visual" pos="0.0263353 0 0.0437" quat="1 0 0 0" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" contype="0" conaffinity="0" />
+      <geom type="mesh" class="visual" pos="-0.0309827 -0.000199 0.0474" quat="1 1 1 1" mesh="waveshare_mounting_plate_so101_v2" material="waveshare_mounting_plate_so101_v2_material" contype="0" conaffinity="0" />
+      <site group="3" name="baseframe" pos="0 0 0" quat="1 0 0 0" />
+      <body name="shoulder" pos="0.0388353 0 0.0624" quat="0 0 -1 0">
+        <joint axis="0 0 1" name="shoulder_pan" type="hinge" range="-1.91986 1.91986" class="sts3215" />
+        <inertial pos="-0.0307604 -1.7e-05 -0.0252713" mass="0.100006" fullinertia="8.3759e-05 8.10403e-05 2.39783e-05 7.55525e-08 -1.16342e-06 1.54663e-07" />
+        <geom type="mesh" class="visual" pos="-0.030399 0.000422 -0.0417" quat="1 1 1 -1" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" contype="0" conaffinity="0" />
+        <geom type="box" class="collision" pos="-0.030399 0.000422 -0.0387" quat="1 1 1 -1" size="0.023 0.015 0.01" rgba="0 0 0 0" contype="0" conaffinity="0" />
+        <geom type="mesh" class="visual" pos="-0.067599 -0.0001778 0.01585" quat="1 1 -1 1" mesh="motor_holder_so101_base_v1" material="motor_holder_so101_base_v1_material" contype="0" conaffinity="0" />
+        <geom type="box" class="collision" pos="-0.025 0 0.0" quat="1 1 -1 1" size="0.038 0.025 0.02" rgba="0 0 0 0" contype="0" conaffinity="0" />
+        <geom type="mesh" class="visual" pos="0.012201 2.2e-05 0.0464" quat="1 -1 0 0" mesh="rotation_pitch_so101_v1" material="rotation_pitch_so101_v1_material" contype="0" conaffinity="0" />
+        <body name="upper_arm" pos="-0.0303992 -0.0182778 -0.0542" quat="1 -1 -1 -1">
+          <joint axis="0 0 1" name="shoulder_lift" type="hinge" range="-1.7453293 1.7453293" class="sts3215" />
+          <inertial pos="-0.089847 -0.008382 0.018409" mass="0.103" fullinertia="4.08002e-05 0.000147318 0.000142487 -1.97819e-05 -4.03016e-08 8.97326e-09" />
+          <geom type="mesh" class="visual" pos="-0.11257 -0.0155 0.0187" quat="0 -1 1 0" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" contype="0" conaffinity="0" />
+          <geom type="box" class="collision" pos="-0.06 0 0.02" quat="0 -1 1 0" size="0.01 0.07 0.03" rgba="0 0 0 0" contype="0" conaffinity="0" />
+          <geom type="mesh" class="visual" pos="-0.065085 0.012 0.0182" quat="0 1 0 0" mesh="upper_arm_so101_v1" material="upper_arm_so101_v1_material" contype="0" conaffinity="0" />
+          <geom type="box" class="collision" pos="-0.12 -0.014 0.0182" quat="0 1 0 0" size="0.01 0.02 0.015" rgba="0 0 0 0" contype="0" conaffinity="0" />
+          <body name="lower_arm" pos="-0.11257 -0.028 0" quat="1 0 0 1">
+            <joint axis="0 0 1" name="elbow_flex" type="hinge" range="-1.69 1.69" class="sts3215" />
+            <inertial pos="-0.098070 0.0032438 0.018283" mass="0.104" fullinertia="2.87438e-05 0.000159844 0.00014529 7.41152e-06 1.26409e-06 -4.90188e-08" />
+            <geom type="mesh" class="visual" pos="-0.06485 -0.032 0.0182" quat="0 1 0 0" mesh="under_arm_so101_v1" material="under_arm_so101_v1_material" contype="0" conaffinity="0" />
+            <geom type="box" class="collision" pos="-0.05 0 0.0182" quat="0 1 0 0" size="0.07 0.01 0.03" rgba="0 0 0 0" contype="0" conaffinity="0" />
+            <geom type="mesh" class="visual" pos="-0.06485 -0.032 0.018" quat="0 -1 0 0" mesh="motor_holder_so101_wrist_v1" material="motor_holder_so101_wrist_v1_material" contype="0" conaffinity="0" />
+            <geom type="box" class="collision" pos="-0.125 0.005 0.018" quat="0 -1 0 0" size="0.023 0.013 0.018" rgba="0 0 0 0" contype="0" conaffinity="0" />
+            <geom type="mesh" class="visual" pos="-0.1224 0.0052 0.0187" quat="0 0 1 0" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" contype="0" conaffinity="0" />
+            <body name="wrist" pos="-0.1349 0.0052 0" quat="1 0 0 -1">
+              <joint axis="0 0 1" name="wrist_flex" type="hinge" range="-1.658063 1.658063" class="sts3215" />
+              <inertial pos="-0.000103312 -0.0386143 0.0281156" mass="0.079" fullinertia="3.68263e-05 2.5391e-05 2.1e-05 1.7893e-08 -5.28128e-08 3.6412e-06" />
+              <body name="gripper" pos="5.55112e-17 -0.0611 0.0181" quat="0.0172091 -0.0172091 0.706897 0.706897">
+                <joint axis="0 0 1" name="wrist_roll" type="hinge" range="-2.7438473 2.8412063" class="sts3215" />
+                <inertial pos="0.000214 0.000245 -0.025187" mass="0.087" fullinertia="2.75087e-05 4.33657e-05 3.45059e-05 -3.35241e-07 -5.7352e-06 -5.17847e-08" />
+                <body name="custom_gripper" quat="0.7071067811865477 0.7071067811865475 0.0 0.0" pos="-0.012509 0.012008000000000001 0.006023999999999997">
+                  <body name="locking_jaw" pos="0.01218 -0.03018 -0.00814">
+                    <joint name="locking_servo" type="hinge" axis="-0.99966 0 .02617" range="-.35 .1" />
+                    <inertial pos="0 0 0" mass=".02" diaginertia="1e-6 1e-6 1e-6" />
+                    <geom name="engage_part_14" type="mesh" mesh="tool_mesh_14" pos="-0.01218 0.03018 0.00814" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  </body>
+                  <geom name="engage_part_1" type="mesh" mesh="tool_mesh_1" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_9" type="mesh" mesh="tool_mesh_9" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_10" type="mesh" mesh="tool_mesh_10" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_11" type="mesh" mesh="tool_mesh_11" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_17" type="mesh" mesh="tool_mesh_17" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_19" type="mesh" mesh="tool_mesh_19" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <site name="socket_axis_target" pos=".012368 -.130 .012269" size=".001" rgba="0 0 0 0" />
+                </body>
+              </body>
+              <body name="custom_rear_wrist" pos="5.55112e-17 -0.0611 0.0181" quat="0.0172091 -0.0172091 0.706897 0.706897">
+                <body name="custom_rear_cad" pos="-0.012509 0.012008000000000001 0.006023999999999997" quat="0.7071067811865477 0.7071067811865475 0.0 0.0">
+                  <geom name="engage_part_3" type="mesh" mesh="tool_mesh_3" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_12" type="mesh" mesh="tool_mesh_12" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_15" type="mesh" mesh="tool_mesh_15" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_16" type="mesh" mesh="tool_mesh_16" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                  <geom name="engage_part_20" type="mesh" mesh="tool_mesh_20" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <geom name="floor_docking_guide" type="mesh" mesh="docking_guide_mesh" rgba=".15 .70 .55 1" contype="0" conaffinity="0" />
+    <body name="tire_tool" mocap="true" pos="0.059559532348636805 -0.13977501733244263 0.050929264998987485" quat="-0.0017539327041171447 0.9908082416102556 -0.13464535747295403 -0.012906579261881802">
+      <geom name="tire_tool_part_0" type="mesh" mesh="tire_tool_part_0" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_3" type="mesh" mesh="tire_tool_part_3" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_4" type="mesh" mesh="tire_tool_part_4" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_5" type="mesh" mesh="tire_tool_part_5" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_6" type="mesh" mesh="tire_tool_part_6" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_7" type="mesh" mesh="tire_tool_part_7" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_8" type="mesh" mesh="tire_tool_part_8" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_9" type="mesh" mesh="tire_tool_part_9" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_10" type="mesh" mesh="tire_tool_part_10" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_12" type="mesh" mesh="tire_tool_part_12" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_14" type="mesh" mesh="tire_tool_part_14" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <body name="tire_jaw_15">
+        <joint name="tire_jaw_slide_15" type="slide" axis=".99966 0 -.02605" range="0 .008" />
+        <inertial pos="0 0 0" mass=".01" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="tire_tool_part_15" type="mesh" mesh="tire_tool_part_15" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      </body>
+      <geom name="tire_tool_part_16" type="mesh" mesh="tire_tool_part_16" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_17" type="mesh" mesh="tire_tool_part_17" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_18" type="mesh" mesh="tire_tool_part_18" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_19" type="mesh" mesh="tire_tool_part_19" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_21" type="mesh" mesh="tire_tool_part_21" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_22" type="mesh" mesh="tire_tool_part_22" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_23" type="mesh" mesh="tire_tool_part_23" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_24" type="mesh" mesh="tire_tool_part_24" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <body name="tire_jaw_25">
+        <joint name="tire_jaw_slide_25" type="slide" axis="-.99966 0 .02605" range="0 .008" />
+        <inertial pos="0 0 0" mass=".01" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="tire_tool_part_25" type="mesh" mesh="tire_tool_part_25" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      </body>
+      <geom name="tire_tool_part_27" type="mesh" mesh="tire_tool_part_27" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_28" type="mesh" mesh="tire_tool_part_28" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_31" type="mesh" mesh="tire_tool_part_31" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_32" type="mesh" mesh="tire_tool_part_32" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_33" type="mesh" mesh="tire_tool_part_33" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_35" type="mesh" mesh="tire_tool_part_35" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="tire_tool_part_38" type="mesh" mesh="tire_tool_part_38" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+  <default>
+    <mesh maxhullvert="128" />
+    <default class="so101">
+      <joint damping="1" frictionloss="0.1" armature="0.005" />
+      <position kp="50" />
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom group="3" condim="3" />
+      </default>
+      <default class="collision_gripper">
+        <geom group="3" condim="6" friction="1 5e-3 5e-4" solref="0.01 1" priority="1" rgba="1.0 0 0 1.0" mass="0" />
+      </default>
+      <default class="collision_gripper_mesh">
+        <geom group="4" condim="6" friction="1 5e-3 5e-4" solref="0.01 1" priority="1" rgba="1.0 0 0 1.0" mass="0" />
+      </default>
+    </default>
+    <default class="sts3215">
+      <geom contype="0" conaffinity="0" />
+      <joint damping="0.60" frictionloss="0.052" armature="0.028" />
+      <position kp="998.22" kv="2.731" forcerange="-2.94 2.94" />
+    </default>
+    <default class="backlash">
+      <joint damping="0.01" frictionloss="0" armature="0.01" limited="true" range="-0.0087267 0.0087267" />
+    </default>
+  </default>
+</mujoco>

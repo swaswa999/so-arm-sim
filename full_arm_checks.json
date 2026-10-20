@@ -1,0 +1,13 @@
+{
+  "samples": 1241,
+  "minimum_mesh_floor_clearance_mm": -4.403597538699122e-07,
+  "max_socket_target_error_mm": 0.05632983235907697,
+  "joint_limits": "passed",
+  "ground_return_and_release": "passed",
+  "nut_retention": "assumed captured by socket during return",
+  "limitations": [
+    "prescribed joint motion, no force simulation",
+    "custom wrist axis registration inferred from CAD",
+    "self and fixture collision clearance not fully validated"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "prototype locator - print fit test required",
+  "units": "mm",
+  "height": 2.5,
+  "lower_clearance_per_side": 0.35,
+  "upper_clearance_per_side": 1.0,
+  "datum": "straight right edge against left side of Rev 2 tire base",
+  "mounting": "fasten both fixture and guide to one rigid board; two 3.4 mm guide holes provided",
+  "tool_support": "tool contacts board through open bottom",
+  "limitations": [
+    "clearance does not eliminate play; adjust after fit test",
+    "no force, friction, tip-over, or release-load validation",
+    "CAD housing has approximately 1.49 degree roll relative to socket axis; final seating orientation needs physical confirmation"
+  ]
+}

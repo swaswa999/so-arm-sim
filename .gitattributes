@@ -1,0 +1,9 @@
+# Preserve CAD exports byte-for-byte and avoid enormous generated text diffs.
+*.step binary
+*.stp binary
+*.stl binary
+*.npz binary
+*.mp4 binary
+*.png binary
+*.jpg binary
+*.jpeg binary

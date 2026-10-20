@@ -1,0 +1,99 @@
+<mujoco model="Mayter — engage tool and unscrew nut">
+  <compiler angle="radian" autolimits="true" />
+  <option gravity="0 0 0" timestep=".005" />
+  <visual>
+    <global offwidth="1200" offheight="900" azimuth="-90" elevation="-25" />
+    <headlight ambient=".4 .4 .4" diffuse=".6 .6 .6" />
+  </visual>
+  <asset>
+    <mesh name="wheel_mesh_0" file="assets/wheel_rev2/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_1" file="assets/wheel_rev2/part_01.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_2" file="assets/wheel_rev2/part_02.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_3" file="assets/wheel_rev2/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_4" file="assets/wheel_rev2/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_5" file="assets/wheel_rev2/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="wheel_mesh_6" file="assets/wheel_rev2/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_0" file="assets/socket_tool/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_1" file="assets/socket_tool/part_01.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_2" file="assets/socket_tool/part_02.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_3" file="assets/socket_tool/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_4" file="assets/socket_tool/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_5" file="assets/socket_tool/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_6" file="assets/socket_tool/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_7" file="assets/socket_tool/part_07.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_8" file="assets/socket_tool/part_08.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_9" file="assets/socket_tool/part_09.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_10" file="assets/socket_tool/part_10.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_11" file="assets/socket_tool/part_11.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_12" file="assets/socket_tool/part_12.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_13" file="assets/socket_tool/part_13.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_14" file="assets/socket_tool/part_14.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_15" file="assets/socket_tool/part_15.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_16" file="assets/socket_tool/part_16.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_17" file="assets/socket_tool/part_17.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_18" file="assets/socket_tool/part_18.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_19" file="assets/socket_tool/part_19.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_20" file="assets/socket_tool/part_20.stl" scale=".001 .001 .001" />
+    <mesh name="tool_mesh_21" file="assets/socket_tool/part_21.stl" scale=".001 .001 .001" />
+    <mesh name="adapter_mesh" file="assets/generated_socket/socket_adapter.stl" scale=".001 .001 .001" />
+  </asset>
+  <worldbody>
+    <light pos="0 -.2 .6" dir="0 0 -1" />
+    <geom name="table" type="plane" size=".45 .35 .01" rgba=".13 .17 .22 1" contype="0" conaffinity="0" />
+    <body name="wheel_fixture" pos="0 0 0.002">
+      <geom name="wheel_part_0" type="mesh" mesh="wheel_mesh_0" pos="0 0 0" rgba="0.2156862754953051 0.4235294089935352 0.5294117662438378 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_1" type="mesh" mesh="wheel_mesh_1" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_2" type="mesh" mesh="wheel_mesh_2" pos="0 0 0" rgba="0.2156862754953051 0.4235294089935352 0.5294117662438378 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_3" type="mesh" mesh="wheel_mesh_3" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <geom name="wheel_part_4" type="mesh" mesh="wheel_mesh_4" pos="0 0 0" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      <body name="nut" pos="0 -.02165 .052">
+        <inertial pos="0 0 0" mass=".002" diaginertia="1e-7 1e-7 1e-7" />
+        <joint name="nut_out" type="slide" axis="0 -1 0" range="0 .035" />
+        <joint name="nut_drop" type="slide" axis="0 0 -1" range="0 .035" />
+        <joint name="nut_turn" type="hinge" axis="0 -1 0" limited="false" />
+        <geom name="wheel_part_5" type="mesh" mesh="wheel_mesh_5" pos="0 .02165 -.052" rgba="0.9294117609627985 0.6666666649079434 0.2705882322929475 1.0" contype="0" conaffinity="0" />
+      </body>
+      <body name="wheel" pos="0 -.013 .052">
+        <inertial pos="0 0 0" mass=".01" diaginertia="1e-6 1e-6 1e-6" />
+        <joint name="wheel_out" type="slide" axis="0 -1 0" range="0 .07" />
+        <geom name="wheel_part_6" type="mesh" mesh="wheel_mesh_6" pos="0 .013 -.052" rgba="0.2705882322929475 0.30588235574643513 0.3450980390256854 1.0" contype="0" conaffinity="0" />
+      </body>
+    </body>
+    <body name="custom_gripper" mocap="true" pos="-.12 -.25 .07" quat="0 0 0 1">
+      <body name="locking_jaw" pos="0.01218 -0.03018 -0.00814">
+        <joint name="locking_servo" type="hinge" axis="-0.99966 0 .02617" range="-.35 .1" />
+        <inertial pos="0 0 0" mass=".02" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="engage_part_14" type="mesh" mesh="tool_mesh_14" pos="-0.01218 0.03018 0.00814" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      </body>
+      <geom name="engage_part_1" type="mesh" mesh="tool_mesh_1" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_3" type="mesh" mesh="tool_mesh_3" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_9" type="mesh" mesh="tool_mesh_9" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_10" type="mesh" mesh="tool_mesh_10" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_11" type="mesh" mesh="tool_mesh_11" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_12" type="mesh" mesh="tool_mesh_12" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_15" type="mesh" mesh="tool_mesh_15" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_16" type="mesh" mesh="tool_mesh_16" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_17" type="mesh" mesh="tool_mesh_17" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_19" type="mesh" mesh="tool_mesh_19" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_20" type="mesh" mesh="tool_mesh_20" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+    </body>
+    <body name="socket_tool" mocap="true" pos="-.12 -.195 .07" quat="0 0 0 1">
+      <body name="powered_drive" pos="0.012368 -0.097607 0.012269">
+        <joint name="drive_turn" type="hinge" axis="0 -1 0" limited="false" />
+        <inertial pos="0 0 0" mass=".02" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="engage_part_2" type="mesh" mesh="tool_mesh_2" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_7" type="mesh" mesh="tool_mesh_7" pos="-0.012368 0.097607 -0.012269" rgba="0.7294117703237839 0.2509803881039145 0.10588235106293152 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_13" type="mesh" mesh="tool_mesh_13" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="engage_part_21" type="mesh" mesh="tool_mesh_21" pos="-0.012368 0.097607 -0.012269" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+        <geom name="new_socket_adapter" type="mesh" mesh="adapter_mesh" pos="-0.012368 0.097607 -0.012269" rgba=".30 .55 .8 1" contype="0" conaffinity="0" />
+      </body>
+      <geom name="engage_part_0" type="mesh" mesh="tool_mesh_0" pos="0.0 0.0 0.0" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_4" type="mesh" mesh="tool_mesh_4" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_5" type="mesh" mesh="tool_mesh_5" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_6" type="mesh" mesh="tool_mesh_6" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_8" type="mesh" mesh="tool_mesh_8" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="engage_part_18" type="mesh" mesh="tool_mesh_18" pos="0.0 0.0 0.0" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+    </body>
+    <geom name="concept_tool_stand" type="box" pos="-.132 -.12 .041" size=".032 .033 .041" rgba=".2 .23 .27 1" contype="0" conaffinity="0" />
+  </worldbody>
+</mujoco>

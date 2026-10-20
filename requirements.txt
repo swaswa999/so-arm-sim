@@ -1,0 +1,5 @@
+# Versions from the existing Python 3.12 simulation environment.
+mujoco==3.16.0
+numpy==2.5.4
+scipy==1.18.1
+Pillow==12.3.0

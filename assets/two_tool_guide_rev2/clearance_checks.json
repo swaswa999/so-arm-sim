@@ -1,0 +1,10 @@
+[
+  {
+    "assembly": "socket_tool",
+    "seated_overlap_mm3": 0.0
+  },
+  {
+    "assembly": "tire_tool",
+    "seated_overlap_mm3": 0.0
+  }
+]

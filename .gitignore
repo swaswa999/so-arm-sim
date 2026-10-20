@@ -1,0 +1,19 @@
+# Local environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Browser profiles, credentials, and local settings
+.onshape-browser/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Machine metadata and runtime logs
+.DS_Store
+._*
+*.log

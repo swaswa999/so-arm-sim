@@ -1,0 +1,18 @@
+{
+  "units": "mm",
+  "panel_width": 30,
+  "panel_height": 50.8,
+  "web_thickness": 3,
+  "foot_depth": 10,
+  "foot_thickness": 3,
+  "upper_pad_width": 28,
+  "upper_pad_height": 10,
+  "nominal_glue_gap": 0.2,
+  "intact_fixture_overlap_mm3": 0.0,
+  "watertight": true,
+  "limitations": [
+    "Rigid repair removes the original support flexure behavior.",
+    "Broken-stub clearance and actual print fit require dry fitting.",
+    "Adhesive strength has not been load-tested."
+  ]
+}

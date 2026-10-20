@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 158,
+  "stages": 53,
+  "sample_count": 3793,
+  "floor_clearance_mm": -1.2307092220331661e-06,
+  "maximum_IK_error_mm": 0.047879978767801895,
+  "maximum_sample_body_displacement_mm": 2.5538069509998995,
+  "joint_limits": "passed",
+  "end_state": "wheel and nut installed, both tools parked, gripper released",
+  "limitations": [
+    "kinematic animation, not force or contact dynamics",
+    "wheel grip and nut retention assumed",
+    "eight turns and 1 mm pitch retained from original printed-thread demo",
+    "full collision and physical hardware execution not validated"
+  ]
+}

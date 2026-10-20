@@ -1,0 +1,23 @@
+{
+  "name": "Mayter_Two_Tool_Funnel_Dock_Prototype",
+  "units": "mm",
+  "height": 18.0,
+  "straight_locating_height": 3.0,
+  "ramp_horizontal_flare": 10.0,
+  "bay_spacing": 85.0,
+  "clearance_per_side": 0.6,
+  "opening_width_depth": [
+    45.84496421813966,
+    48.78283996582035
+  ],
+  "size_mm": [
+    178.4150161743164,
+    98.6867446899414,
+    18.0
+  ],
+  "bays": 2,
+  "second_bay": "duplicate socket housing envelope; second tool fit not established",
+  "status": "concept prototype; friction, gripper clearance, tool release, reach and drop-in alignment require validation",
+  "mounting": "register right datum against wheel fixture and fasten to common board",
+  "tool_support": "open bottom, tool rests on board"
+}

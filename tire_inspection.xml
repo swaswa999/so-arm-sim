@@ -1,0 +1,96 @@
+<mujoco model="Mayter custom wrist and socket — CAD inspection">
+  <compiler angle="radian" />
+  <visual>
+    <global offwidth="1200" offheight="900" azimuth="145" elevation="-20" />
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.6 0.6 0.6" />
+  </visual>
+  <asset>
+    <mesh name="part_0" file="assets/tire_tool/part_00.stl" scale=".001 .001 .001" />
+    <mesh name="part_1" file="assets/tire_tool/part_01.stl" scale=".001 .001 .001" />
+    <mesh name="part_2" file="assets/tire_tool/part_02.stl" scale=".001 .001 .001" />
+    <mesh name="part_3" file="assets/tire_tool/part_03.stl" scale=".001 .001 .001" />
+    <mesh name="part_4" file="assets/tire_tool/part_04.stl" scale=".001 .001 .001" />
+    <mesh name="part_5" file="assets/tire_tool/part_05.stl" scale=".001 .001 .001" />
+    <mesh name="part_6" file="assets/tire_tool/part_06.stl" scale=".001 .001 .001" />
+    <mesh name="part_7" file="assets/tire_tool/part_07.stl" scale=".001 .001 .001" />
+    <mesh name="part_8" file="assets/tire_tool/part_08.stl" scale=".001 .001 .001" />
+    <mesh name="part_9" file="assets/tire_tool/part_09.stl" scale=".001 .001 .001" />
+    <mesh name="part_10" file="assets/tire_tool/part_10.stl" scale=".001 .001 .001" />
+    <mesh name="part_11" file="assets/tire_tool/part_11.stl" scale=".001 .001 .001" />
+    <mesh name="part_12" file="assets/tire_tool/part_12.stl" scale=".001 .001 .001" />
+    <mesh name="part_13" file="assets/tire_tool/part_13.stl" scale=".001 .001 .001" />
+    <mesh name="part_14" file="assets/tire_tool/part_14.stl" scale=".001 .001 .001" />
+    <mesh name="part_15" file="assets/tire_tool/part_15.stl" scale=".001 .001 .001" />
+    <mesh name="part_16" file="assets/tire_tool/part_16.stl" scale=".001 .001 .001" />
+    <mesh name="part_17" file="assets/tire_tool/part_17.stl" scale=".001 .001 .001" />
+    <mesh name="part_18" file="assets/tire_tool/part_18.stl" scale=".001 .001 .001" />
+    <mesh name="part_19" file="assets/tire_tool/part_19.stl" scale=".001 .001 .001" />
+    <mesh name="part_20" file="assets/tire_tool/part_20.stl" scale=".001 .001 .001" />
+    <mesh name="part_21" file="assets/tire_tool/part_21.stl" scale=".001 .001 .001" />
+    <mesh name="part_22" file="assets/tire_tool/part_22.stl" scale=".001 .001 .001" />
+    <mesh name="part_23" file="assets/tire_tool/part_23.stl" scale=".001 .001 .001" />
+    <mesh name="part_24" file="assets/tire_tool/part_24.stl" scale=".001 .001 .001" />
+    <mesh name="part_25" file="assets/tire_tool/part_25.stl" scale=".001 .001 .001" />
+    <mesh name="part_26" file="assets/tire_tool/part_26.stl" scale=".001 .001 .001" />
+    <mesh name="part_27" file="assets/tire_tool/part_27.stl" scale=".001 .001 .001" />
+    <mesh name="part_28" file="assets/tire_tool/part_28.stl" scale=".001 .001 .001" />
+    <mesh name="part_29" file="assets/tire_tool/part_29.stl" scale=".001 .001 .001" />
+    <mesh name="part_30" file="assets/tire_tool/part_30.stl" scale=".001 .001 .001" />
+    <mesh name="part_31" file="assets/tire_tool/part_31.stl" scale=".001 .001 .001" />
+    <mesh name="part_32" file="assets/tire_tool/part_32.stl" scale=".001 .001 .001" />
+    <mesh name="part_33" file="assets/tire_tool/part_33.stl" scale=".001 .001 .001" />
+    <mesh name="part_34" file="assets/tire_tool/part_34.stl" scale=".001 .001 .001" />
+    <mesh name="part_35" file="assets/tire_tool/part_35.stl" scale=".001 .001 .001" />
+    <mesh name="part_36" file="assets/tire_tool/part_36.stl" scale=".001 .001 .001" />
+    <mesh name="part_37" file="assets/tire_tool/part_37.stl" scale=".001 .001 .001" />
+    <mesh name="part_38" file="assets/tire_tool/part_38.stl" scale=".001 .001 .001" />
+    <mesh name="part_39" file="assets/tire_tool/part_39.stl" scale=".001 .001 .001" />
+    <mesh name="part_40" file="assets/tire_tool/part_40.stl" scale=".001 .001 .001" />
+  </asset>
+  <worldbody>
+    <light pos="0 -0.3 0.5" dir="0 0 -1" />
+    <body name="custom_wrist_assembly">
+      <geom name="part_0" type="mesh" mesh="part_0" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_1" type="mesh" mesh="part_1" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_2" type="mesh" mesh="part_2" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_3" type="mesh" mesh="part_3" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_4" type="mesh" mesh="part_4" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_5" type="mesh" mesh="part_5" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_6" type="mesh" mesh="part_6" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_7" type="mesh" mesh="part_7" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_8" type="mesh" mesh="part_8" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_9" type="mesh" mesh="part_9" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_10" type="mesh" mesh="part_10" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_11" type="mesh" mesh="part_11" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_12" type="mesh" mesh="part_12" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_13" type="mesh" mesh="part_13" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_14" type="mesh" mesh="part_14" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_15" type="mesh" mesh="part_15" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="part_16" type="mesh" mesh="part_16" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_17" type="mesh" mesh="part_17" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_18" type="mesh" mesh="part_18" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_19" type="mesh" mesh="part_19" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_20" type="mesh" mesh="part_20" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_21" type="mesh" mesh="part_21" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="part_22" type="mesh" mesh="part_22" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="part_23" type="mesh" mesh="part_23" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <geom name="part_24" type="mesh" mesh="part_24" rgba="0.5960784331303468 0.17647059007901564 0.05098039223325416 1.0" contype="0" conaffinity="0" />
+      <geom name="part_25" type="mesh" mesh="part_25" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="part_26" type="mesh" mesh="part_26" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_27" type="mesh" mesh="part_27" rgba="0.90196077033812 0.90196077033812 0.90196077033812 1.0" contype="0" conaffinity="0" />
+      <geom name="part_28" type="mesh" mesh="part_28" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_29" type="mesh" mesh="part_29" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_30" type="mesh" mesh="part_30" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_31" type="mesh" mesh="part_31" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_32" type="mesh" mesh="part_32" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_33" type="mesh" mesh="part_33" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_34" type="mesh" mesh="part_34" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_35" type="mesh" mesh="part_35" rgba="0.6039215727688644 0.6470588276982571 0.6862745072771398 1.0" contype="0" conaffinity="0" />
+      <geom name="part_36" type="mesh" mesh="part_36" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_37" type="mesh" mesh="part_37" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_38" type="mesh" mesh="part_38" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_39" type="mesh" mesh="part_39" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+      <geom name="part_40" type="mesh" mesh="part_40" rgba="0.980392145089071 0.980392145089071 0.980392145089071 1.0" contype="0" conaffinity="0" />
+    </body>
+  </worldbody>
+</mujoco>

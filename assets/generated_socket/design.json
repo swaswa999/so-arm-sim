@@ -1,0 +1,9 @@
+{
+  "units": "mm",
+  "length": 20,
+  "outer_diameter": 12,
+  "drive_recess_across_flats": 6.6,
+  "nut_recess_across_flats": 5.8,
+  "status": "concept adapter; clearance and insertion depth not physically validated",
+  "source": "generated for simulation, not supplied CAD"
+}
