@@ -106,10 +106,11 @@ def main():
                                 controls['paused']=True
                                 accumulator=0.
                                 break
-                    window.set_texts((100,0,
-                        'MAYTER | PHYSICS\n'+sim.state['label']+'\nP/Space: pause  R: reset  F: push  M: motors  C: forces  G: contacts',
-                        f'{sim.data.time:.2f}s | {sim.data.ncon} contacts | {"PAUSED" if controls["paused"] else sim.status}\n'
-                        f'Motors {"ON" if sim.motors_enabled else "OFF"} | {params["servo_profile"]} | uncalibrated mass/friction'))
+                # Text updates wait for the render thread, which needs the viewer lock.
+                window.set_texts((100,0,
+                    'MAYTER | PHYSICS\n'+sim.state['label']+'\nP/Space: pause  R: reset  F: push  M: motors  C: forces  G: contacts',
+                    f'{sim.data.time:.2f}s | {sim.data.ncon} contacts | {"PAUSED" if controls["paused"] else sim.status}\n'
+                    f'Motors {"ON" if sim.motors_enabled else "OFF"} | {params["servo_profile"]} | uncalibrated mass/friction'))
                 window.sync()
                 time.sleep(.005)
     report=sim.report()
